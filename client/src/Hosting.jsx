@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import image6 from '../images/logo.jpg'
+const image6 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 import {Menu,ChevronDown,ChevronRight,ArrowRightCircle,Phone,Mail }from 'lucide-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -281,7 +281,7 @@ const serviceItems = [
             </ul>
 
             {/* CTA Button */}
-            <button className="hidden lg:flex gap-2 rounded-xl bg-[#e36a2e] px-4 sm:px-6 py-2 sm:py-3 text-sm font-semibold text-black transition hover:bg-[#cf5f28] whitespace-nowrap" onClick={()=>{navigate('/contact')}}>
+            <button className="hidden lg:flex gap-2 rounded-xl bg-[#e36a2e] px-4 sm:px-6 py-2 sm:py-3 text-sm font-semibold text-black transition hover:bg-[#e36a2e] whitespace-nowrap" onClick={()=>{navigate('/contact')}}>
               Get Started Now <span><ArrowRightCircle size={18} className='text-black'/></span>
             </button>
           </nav>
@@ -333,7 +333,7 @@ const serviceItems = [
                   <li  onClick={()=>{navigate('/contact')}}className="py-2 border-b border-gray-100">
                   Contact
                   </li>
-                  <button className="w-full flex justify-center gap-2 rounded-xl bg-[#e36a2e] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#cf5f28]" onClick={()=>{navigate('/contact')}}>
+                  <button className="w-full flex justify-center gap-2 rounded-xl bg-[#e36a2e] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#e36a2e]" onClick={()=>{navigate('/contact')}}>
                     Get Started Now <ArrowRightCircle size={18} className='text-black'/>
                   </button>
                 </li>
@@ -550,3 +550,4 @@ const serviceItems = [
 };
 
 export default ManagedHosting;
+

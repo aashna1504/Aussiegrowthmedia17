@@ -25,7 +25,7 @@ const WhiteLabelMarketing = () => {
         .wlm-dot  { width:6px;height:6px;border-radius:50%;background:#e36a2e;animation:wdot 2s infinite; }
         @keyframes wdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.7)}}
 
-        .wlm-divider { height:3px;background:linear-gradient(90deg,transparent,#e36a2e,#cf5f28,transparent);border-radius:9999px; }
+        .wlm-divider { height:3px;background:linear-gradient(90deg,transparent,#e36a2e,#e36a2e,transparent);border-radius:9999px; }
 
         /* Cards */
         .wlm-card { background:#fff;border-radius:24px;border:1px solid #f3e8e1;box-shadow:0 4px 24px rgba(227,106,46,.06);transition:all .3s ease; }
@@ -47,14 +47,14 @@ const WhiteLabelMarketing = () => {
         .wlm-cicon { width:24px;height:24px;border-radius:50%;background:#fff7f4;border:1px solid #f0c4aa;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
 
         /* Portfolio banner */
-        .wlm-banner { border-radius:24px;padding:36px;position:relative;overflow:hidden;background:linear-gradient(135deg,#e36a2e 0%,#cf5f28 100%); }
+        .wlm-banner { border-radius:24px;padding:36px;position:relative;overflow:hidden;background:linear-gradient(135deg,#e36a2e 0%,#e36a2e 100%); }
         .wlm-banner::before { content:'';position:absolute;top:-60px;right:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,0.06); }
         .wlm-banner::after  { content:'';position:absolute;bottom:-40px;left:-40px;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,0.04); }
         .wlm-slabel { font-size:10px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:14px;font-family:'Mulish',sans-serif; }
 
         /* Partner cards */
         .wlm-pcard { background:#fff;border:1px solid #f3e8e1;border-radius:24px;padding:36px 32px;text-align:center;transition:all .35s cubic-bezier(.34,1.4,.64,1);position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(227,106,46,.06); }
-        .wlm-pcard::after { content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#e36a2e,#cf5f28);transform:scaleX(0);transform-origin:left;transition:transform .35s ease; }
+        .wlm-pcard::after { content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#e36a2e,#e36a2e);transform:scaleX(0);transform-origin:left;transition:transform .35s ease; }
         .wlm-pcard:hover { transform:translateY(-10px);border-color:#f0c4aa;box-shadow:0 28px 60px rgba(227,106,46,.15); }
         .wlm-pcard:hover::after { transform:scaleX(1); }
 
@@ -62,7 +62,7 @@ const WhiteLabelMarketing = () => {
         .wlm-pdot { width:6px;height:6px;border-radius:50%;background:#e36a2e;flex-shrink:0; }
 
         /* CTA */
-        .wlm-cta { border-radius:28px;padding:64px 48px;position:relative;overflow:hidden;background:linear-gradient(135deg,#e36a2e 0%,#cf5f28 100%);box-shadow:0 32px 72px rgba(227,106,46,.3);text-align:center; }
+        .wlm-cta { border-radius:28px;padding:64px 48px;position:relative;overflow:hidden;background:linear-gradient(135deg,#e36a2e 0%,#e36a2e 100%);box-shadow:0 32px 72px rgba(227,106,46,.3);text-align:center; }
         .wlm-cta::before { content:'';position:absolute;top:0;left:50%;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,.04);transform:translate(-50%,-50%); }
         .wlm-cta::after  { content:'';position:absolute;bottom:0;right:0;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.03);transform:translate(30%,30%); }
         .wlm-cbtn { display:inline-flex;align-items:center;gap:10px;background:#18181b;color:#fff;font-weight:900;font-family:'Syne',sans-serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:16px 40px;border-radius:9999px;border:none;cursor:pointer;transition:all .3s ease;box-shadow:0 8px 24px rgba(0,0,0,.25); }
@@ -445,3 +445,4 @@ const WhiteLabelMarketing = () => {
 };
 
 export default WhiteLabelMarketing;
+

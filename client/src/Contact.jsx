@@ -151,7 +151,7 @@ export default function Contact() {
                   </h3>
                   <a
                     href={card.href}
-                    className="text-[#e36a2e] font-semibold text-sm hover:text-[#cf5f28] transition-colors break-all"
+                    className="text-[#e36a2e] font-semibold text-sm hover:text-[#e36a2e] transition-colors break-all"
                   >
                     {card.value}
                   </a>
@@ -239,3 +239,4 @@ export default function Contact() {
     </div>
   );
 }
+

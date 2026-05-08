@@ -27,7 +27,7 @@ const TopBar = ({
   return (
     <div
       data-aos="slide-down"
-      className={`relative z-[101] w-full bg-[#fafafa] border-b border-gray-100/80 px-4 py-0.5 sm:py-2 text-[10px] sm:text-xs font-medium tracking-wide text-gray-500 ${className}`}
+      className={`relative z-[101] w-full bg-white border-b border-zinc-200 px-4 py-1 sm:py-1.5 text-[10px] sm:text-xs font-medium tracking-wide text-zinc-600 ${className}`}
     >
       <div className="mx-auto flex max-w-7xl flex-row items-center justify-between sm:gap-0">
         {/* Contact Info Group */}
@@ -69,7 +69,13 @@ const TopBar = ({
         </div>
 
         {/* Actions Group */}
-        <div className="flex items-center">
+        <div className="hidden sm:flex items-center gap-3 text-[11px]">
+          <a className="hover:text-zinc-900 transition-colors">Contact Us</a>
+          <span className="text-zinc-300">|</span>
+          <a className="hover:text-zinc-900 transition-colors">Quick Links</a>
+          <span className="text-zinc-300">|</span>
+          <a className="hover:text-zinc-900 transition-colors">Log In/Sign Up</a>
+          <span className="text-zinc-300">|</span>
           <a
             onClick={onCtaClick}
             className="cursor-pointer whitespace-nowrap transition-colors duration-300"

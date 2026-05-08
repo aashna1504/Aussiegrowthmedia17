@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from "./Footer";
 
 const FormSubmissionConfirmation = () => {
   const [countdown, setCountdown] = useState(5);
@@ -189,14 +190,8 @@ navigate("/");
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="text-center mt-10 text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} growthflowmedia.com All rights reserved.</p>
-               <span>
-          Developed and Managed by{" "}
-          <strong className="text-[#B23A2F] mt-2"><a href='https://growthflowmedia.com'>Aussie Growth Media</a></strong>
-        </span>
-         
+        <div className="mt-10 w-full">
+          <Footer />
         </div>
       </div>
     </div>
@@ -204,3 +199,5 @@ navigate("/");
 };
 
 export default FormSubmissionConfirmation;
+
+

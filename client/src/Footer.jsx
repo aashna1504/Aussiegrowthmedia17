@@ -8,7 +8,7 @@ import {
   Twitter,
   ChevronRight,
 } from "lucide-react";
-import image10 from "../images/logowhite.png";
+const image10 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 
 export default function Footer() {
   const quickLinks = [

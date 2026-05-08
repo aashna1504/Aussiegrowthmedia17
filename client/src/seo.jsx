@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import image6 from "../images/logo.jpg";
+const image6 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 import {
   Menu,
   ChevronDown,
@@ -360,7 +360,7 @@ const SEO = () => {
               </p>
               <button
                 onClick={() => navigate("/contact")}
-                className="group inline-flex items-center justify-center gap-3 bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-center gap-3 bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
               >
                 Let's Start Ranking
                 <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -376,3 +376,4 @@ const SEO = () => {
 };
 
 export default SEO;
+

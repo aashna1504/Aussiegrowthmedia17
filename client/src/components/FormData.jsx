@@ -3,7 +3,7 @@ import { ArrowRightCircle, Loader2 } from "lucide-react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import image6 from "../../images/logowhite.png";
+const image6 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 
 const DEFAULT_RADIO_OPTIONS = [
   "Website Design",

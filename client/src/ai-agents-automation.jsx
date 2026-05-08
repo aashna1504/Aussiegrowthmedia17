@@ -405,7 +405,7 @@ const AIAgentsAutomation = () => {
             <div className="reveal group" style={{ transitionDelay: "0.2s" }}>
               <div className="bg-zinc-900/50 border-2 border-[#e36a2e]/40 rounded-3xl p-8 glow-box card-3d h-full">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#cf5f28] rounded-xl flex items-center justify-center rotate-slow">
+                  <div className="w-16 h-16 bg-[#e36a2e] rounded-xl flex items-center justify-center rotate-slow">
                     <svg
                       className="w-8 h-8 text-white"
                       fill="none"
@@ -611,7 +611,7 @@ const AIAgentsAutomation = () => {
             <div className="reveal group" style={{ transitionDelay: "0.4s" }}>
               <div className="bg-zinc-900/50 border-2 border-[#e36a2e]/40 rounded-3xl p-8 glow-box card-3d h-full">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#cf5f28] rounded-xl flex items-center justify-center rotate-slow">
+                  <div className="w-16 h-16 bg-[#e36a2e] rounded-xl flex items-center justify-center rotate-slow">
                     <svg
                       className="w-8 h-8 text-white"
                       fill="none"
@@ -756,7 +756,7 @@ const AIAgentsAutomation = () => {
               },
               {
                 name: "Claude",
-                color: "from-[#cf5f28] to-[#e36a2e]",
+                color: "from-[#e36a2e] to-[#e36a2e]",
                 icon: (
                   <svg
                     viewBox="0 0 24 24"
@@ -813,7 +813,7 @@ const AIAgentsAutomation = () => {
               },
               {
                 name: "PyTorch",
-                color: "from-[#cf5f28] to-orange-700",
+                color: "from-[#e36a2e] to-orange-700",
                 icon: (
                   <svg
                     viewBox="0 0 24 24"
@@ -875,7 +875,7 @@ const AIAgentsAutomation = () => {
               },
               {
                 name: "Pinecone",
-                color: "from-orange-700 to-[#cf5f28]",
+                color: "from-orange-700 to-[#e36a2e]",
                 icon: (
                   <svg
                     viewBox="0 0 24 24"
@@ -947,7 +947,7 @@ const AIAgentsAutomation = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#cf5f28] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#e36a2e] rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -1005,7 +1005,7 @@ const AIAgentsAutomation = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#cf5f28] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#e36a2e] rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -1312,7 +1312,7 @@ const AIAgentsAutomation = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
-              className="bg-gradient-to-r from-[#e36a2e] to-[#cf5f28] text-white px-12 py-6 rounded-xl tech-font text-lg font-bold hover:shadow-2xl hover:shadow-[#e36a2e]/50 transform hover:scale-105 transition-all duration-300 border-2 border-[#e36a2e] pulse-glow"
+              className="bg-gradient-to-r from-[#e36a2e] to-[#e36a2e] text-white px-12 py-6 rounded-xl tech-font text-lg font-bold hover:shadow-2xl hover:shadow-[#e36a2e]/50 transform hover:scale-105 transition-all duration-300 border-2 border-[#e36a2e] pulse-glow"
               onClick={() => navigate("/contact")}
             >
               START YOUR PROJECT
@@ -1326,3 +1326,4 @@ const AIAgentsAutomation = () => {
 };
 
 export default AIAgentsAutomation;
+

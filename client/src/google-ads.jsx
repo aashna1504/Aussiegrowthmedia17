@@ -652,7 +652,7 @@ const GoogleAdsManagement = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
               onClick={() => navigate("/contact")}
-              className="bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-12 py-6 rounded-full display-font text-lg hover:shadow-2xl hover:shadow-[#e36a2e]/30 transform hover:scale-105 transition-all duration-300"
+              className="bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-12 py-6 rounded-full display-font text-lg hover:shadow-2xl hover:shadow-[#e36a2e]/30 transform hover:scale-105 transition-all duration-300"
             >
               LETS START
             </button>
@@ -665,3 +665,4 @@ const GoogleAdsManagement = () => {
 };
 
 export default GoogleAdsManagement;
+

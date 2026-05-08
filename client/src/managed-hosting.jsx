@@ -682,7 +682,7 @@ const Hosting = () => {
               </p>
               <button
                 onClick={() => navigate("/contact")}
-                className="group inline-flex items-center justify-center gap-3 bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-center gap-3 bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
               >
                 Get Started Now
                 <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -717,3 +717,4 @@ const MessageSquare = ({ className, ...props }) => (
 );
 
 export default Hosting;
+

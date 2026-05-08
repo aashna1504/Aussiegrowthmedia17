@@ -81,7 +81,7 @@ const DigitalMarketing = () => {
               </p>
               <button
                 onClick={() => navigate("/contact")}
-                className="group px-8 py-4 rounded-full font-semibold flex items-center gap-3 text-white bg-[#e36a2e] hover:bg-[#cf5f28] transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+                className="group px-8 py-4 rounded-full font-semibold flex items-center gap-3 text-white bg-[#e36a2e] hover:bg-[#e36a2e] transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
               >
                 Start Your Campaign{" "}
                 <ChevronRight
@@ -267,3 +267,4 @@ const DigitalMarketing = () => {
 };
 
 export default DigitalMarketing;
+

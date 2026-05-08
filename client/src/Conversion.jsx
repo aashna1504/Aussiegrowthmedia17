@@ -223,7 +223,7 @@ const ConversionRateOptimization = () => {
           className="rounded-3xl p-8 text-white relative overflow-hidden"
           style={{
             background:
-              "linear-gradient(135deg, #e36a2e 0%, #cf5f28 50%, #b85322 100%)",
+              "linear-gradient(135deg, #e36a2e 0%, #e36a2e 50%, #b85322 100%)",
           }}
         >
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
@@ -337,7 +337,7 @@ const ConversionRateOptimization = () => {
 
               <button
                 data-aos="slide-left"
-                className="bg-[#e36a2e] text-white px-7 sm:px-9 py-3 rounded-full font-semibold hover:bg-[#cf5f28] hover:shadow-lg hover:shadow-[#e36a2e]/30 flex items-center gap-2 text-sm sm:text-base transition-all duration-200"
+                className="bg-[#e36a2e] text-white px-7 sm:px-9 py-3 rounded-full font-semibold hover:bg-[#e36a2e] hover:shadow-lg hover:shadow-[#e36a2e]/30 flex items-center gap-2 text-sm sm:text-base transition-all duration-200"
               >
                 View All <ChevronRight className="w-4 h-4" />
               </button>
@@ -356,3 +356,4 @@ const ConversionRateOptimization = () => {
 };
 
 export default ConversionRateOptimization;
+

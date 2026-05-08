@@ -10,15 +10,15 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Confetti from "react-confetti";
-import { FaChevronDown, FaFacebook, FaGoogle } from "react-icons/fa";
+import { FaFacebook, FaGoogle } from "react-icons/fa";
 import image2 from "../images/image2.png";
 import image3 from "../images/image3.png";
 import image4 from "../images/image4.png";
 import image5 from "../images/image5.png";
+import designSlideIcon from "../images/design-slide-icon.svg";
 import vansh from "../images/study.webp";
 
-import image6 from "../images/logo.png";
-import image10 from "../images/logowhite.png";
+const image6 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 
 import image7 from "../images/image7.jpg";
 import image8 from "../images/image8.jpg";
@@ -41,10 +41,10 @@ import Marquee from "./components/Marquee";
 import TopBar from "./components/TopBar";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
+import Footer from "./Footer";
 
 export default function GrowthFlowMedia() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const { width, height } = useWindowSize();
   useEffect(() => {
@@ -56,7 +56,13 @@ export default function GrowthFlowMedia() {
     { id: 1, image: image2, text: "Build", color: "text-green-600" },
     { id: 2, image: image3, text: "Develop", color: "text-orange-500" },
     { id: 1, image: image4, text: "Grow", color: "text-blue-600" },
-    { id: 1, image: image5, text: "Design", color: "text-purple-600" },
+    {
+      id: 1,
+      image: designSlideIcon,
+      text: "Design",
+      color: "text-red-500",
+      fit: "contain",
+    },
   ];
   // Add this to your component's state declarations
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -114,43 +120,6 @@ export default function GrowthFlowMedia() {
       document.removeEventListener("touchstart", handleClickOutside);
     };
   }, [helpOpen]);
-  const quickLinks = [
-    { name: "Home", path: "/" },
-    { name: "Contact", path: "/contact" },
-  ];
-
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  // Handle service selection
-  const handleServiceSelect = (path) => {
-    navigate(path);
-    setIsServicesOpen(false);
-    setIsMenuOpen(false);
-  };
-  const serviceItems = [
-    { name: "Website Design", path: "/webdesign" },
-    { name: "Lead Generation", path: "/lead" },
-    { name: "Go High Level CRM", path: "/gohigh" },
-    { name: "Ai Agents/Automation Development", path: "/ai" },
-
-    { name: "White Label Marketing", path: "/whitelabel" },
-
-    { name: "Digital Marketing", path: "/digitalmarketing" },
-    { name: "Managed Hosting", path: "/hosting" },
-
-    { name: "Conversion Rate Optimization", path: "/conversionrate" },
-
-    { name: "Service Website", path: "/service-site" },
-    { name: "Meta Ads Management", path: "/metaads" },
-
-    { name: "Search Engine Optimisation", path: "/seo" },
-
-    { name: "Branding & Logo Design", path: "/branding&logodesign" },
-
-    { name: "ECommerce Websites", path: "/ecommerce" },
-
-    { name: "Google Ads Management", path: "/googleads" },
-  ];
-
   const ContactSection = useRef(null);
   const scrollToContact = () => {
     ContactSection.current.scrollIntoView({ behavior: "smooth" });
@@ -211,7 +180,7 @@ export default function GrowthFlowMedia() {
 /* Better hover effects */
 .help-option:hover {
   transform: translateX(-5px);
-  background: linear-gradient(90deg, #FF9500/10 0%, transparent 100%);
+  background: linear-gradient(90deg, #e36a2e/10 0%, transparent 100%);
 }
 
 /* Mobile responsiveness */
@@ -349,6 +318,9 @@ export default function GrowthFlowMedia() {
         designImages={designImages}
         currentImageIndex={currentImageIndex}
         heroImage={vansh}
+        badgeText="Design & Digital Marketing Agency Brisbane"
+        subHeading="with AR Digital Solutions"
+        ctaLabel="Get Started Now"
         onServiceChange={handleChangeSelection}
         onCtaClick={scrollToContact}
       />
@@ -644,7 +616,7 @@ export default function GrowthFlowMedia() {
       <ServicesSection />
 
       {/* Why Choose Us Section */}
-      <section className="relative bg-[#060608] py-20 sm:py-28 lg:py-36 overflow-hidden">
+      <section className="relative bg-zinc-950 py-20 sm:py-28 lg:py-36 overflow-hidden">
         {/* White curve top */}
         <div className="absolute top-0 left-0 right-0 h-16 sm:h-24 bg-[#fafaf9] rounded-b-[50%] z-0" />
 
@@ -697,7 +669,7 @@ export default function GrowthFlowMedia() {
           </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.06] rounded-2xl overflow-hidden border border-white/[0.06]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
                 number: "01",
@@ -826,38 +798,37 @@ export default function GrowthFlowMedia() {
                 ),
               },
             ].map((item, index) => (
-              <div
+              <article
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 60}
-                className="group relative bg-[#060608] hover:bg-[#0f0f0f] p-7 sm:p-8 lg:p-10 transition-all duration-500 cursor-default overflow-hidden"
+                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[linear-gradient(160deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))] p-7 sm:p-8 transition-all duration-500 hover:-translate-y-1 hover:border-[#e36a2e]/40 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
               >
-                {/* Hover orange glow in corner */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/0 group-hover:bg-orange-500/5 rounded-full blur-2xl transition-all duration-700 -translate-y-1/2 translate-x-1/2" />
+                <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-[#e36a2e]/0 blur-3xl transition-all duration-700 group-hover:bg-[#e36a2e]/20" />
 
                 {/* Top row: number + icon */}
                 <div className="flex items-start justify-between mb-6">
-                  <span className="font-['Cormorant_Garamond'] text-5xl sm:text-6xl font-light text-white/[0.06] group-hover:text-orange-500/20 leading-none transition-colors duration-500 select-none">
-                    {item.number}
+                  <span className="inline-flex items-center rounded-full border border-[#e36a2e]/25 bg-[#e36a2e]/10 px-3 py-1 font-['Montserrat'] text-[11px] font-semibold tracking-[0.18em] text-[#e36a2e]">
+                    STEP {item.number}
                   </span>
-                  <div className="w-9 h-9 rounded-xl bg-white/[0.04] group-hover:bg-orange-500/10 border border-white/[0.06] group-hover:border-orange-500/20 flex items-center justify-center text-white/30 group-hover:text-orange-400 transition-all duration-500">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-white/40 transition-all duration-500 group-hover:border-[#e36a2e]/30 group-hover:bg-[#e36a2e]/10 group-hover:text-[#e36a2e]">
                     {item.icon}
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="font-['Cormorant_Garamond'] text-xl sm:text-2xl font-semibold text-white/80 group-hover:text-white mb-3 transition-colors duration-500 leading-snug">
+                <h3 className="mb-3 font-['Cormorant_Garamond'] text-xl sm:text-2xl font-semibold leading-snug text-white/90 transition-colors duration-500 group-hover:text-white">
                   {item.title}
                 </h3>
 
                 {/* Thin accent line */}
-                <div className="w-8 h-px bg-white/10 group-hover:w-16 group-hover:bg-orange-500/60 transition-all duration-500 mb-4" />
+                <div className="mb-4 h-px w-10 bg-white/15 transition-all duration-500 group-hover:w-20 group-hover:bg-[#e36a2e]" />
 
                 {/* Desc */}
-                <p className="font-['Montserrat'] text-white/30 group-hover:text-white text-xs sm:text-sm leading-relaxed font-light transition-colors duration-500">
+                <p className="font-['Montserrat'] text-xs sm:text-sm leading-relaxed font-light text-white/50 transition-colors duration-500 group-hover:text-white/90">
                   {item.desc}
                 </p>
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -1094,7 +1065,7 @@ export default function GrowthFlowMedia() {
                 ))}
               </div>
 
-              <button
+              {/* <button
                 data-aos="fade-up"
                 data-aos-delay="200"
                 className="group inline-flex items-center gap-2 rounded-full border border-zinc-700 bg-transparent px-8 py-3 sm:py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-[#e36a2e] hover:bg-[#e36a2e]/10 hover:text-[#e36a2e]"
@@ -1106,7 +1077,7 @@ export default function GrowthFlowMedia() {
               >
                 View All FAQs
                 <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
+              </button> */}
             </div>
 
             {/* Right Column: Image & Support Card */}
@@ -1133,7 +1104,7 @@ export default function GrowthFlowMedia() {
                   ready to jump in and help you out.
                 </p>
                 <button
-                  className="w-full sm:w-auto bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-8 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+                  className="w-full sm:w-auto bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-8 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
                   onClick={scrollToContact}
                 >
                   Contact Support
@@ -1379,7 +1350,7 @@ export default function GrowthFlowMedia() {
               <button
                 data-aos="fade-up"
                 data-aos-delay="200"
-                className="group px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-3 mx-auto lg:mx-0 text-white bg-[#e36a2e] hover:bg-[#cf5f28] transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+                className="group px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-3 mx-auto lg:mx-0 text-white bg-[#e36a2e] hover:bg-[#e36a2e] transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
                 onClick={scrollToContact}
               >
                 Get Started Now
@@ -1392,128 +1363,7 @@ export default function GrowthFlowMedia() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="relative px-4 sm:px-6 py-16 sm:py-24 bg-zinc-950 border-t border-zinc-900 overflow-hidden">
-          <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
-            {/* Brand & About (Takes up 5 cols) */}
-            <div className="md:col-span-5">
-              <img
-                src={image10}
-                alt="Aussie Growth Media"
-                className="h-12 object-contain mb-6"
-              />
-              <p className="text-zinc-400 leading-relaxed text-sm max-w-sm mb-8">
-                Aussie Growth Media prides itself on delivering top-tier digital
-                marketing and design services at competitive prices. We engineer
-                growth so you can focus on your business.
-              </p>
-
-              <h3 className="text-sm font-bold text-white tracking-widest uppercase mb-4">
-                Connect With Us
-              </h3>
-              <div className="flex flex-wrap gap-3">
-                {[
-                  { icon: <Facebook size={18} />, label: "Facebook" },
-                  { icon: <Twitter size={18} />, label: "Twitter" },
-                  { icon: <Instagram size={18} />, label: "Instagram" },
-                  { icon: <Linkedin size={18} />, label: "LinkedIn" },
-                  { icon: <Youtube size={18} />, label: "YouTube" },
-                ].map((social, idx) => (
-                  <a
-                    key={idx}
-                    href="#"
-                    className="w-10 h-10 bg-zinc-900 border border-zinc-800 hover:border-[#e36a2e] hover:bg-[#e36a2e] rounded-xl flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
-                    aria-label={social.label}
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Quick Links (Takes up 3 cols) */}
-            <div className="md:col-span-3">
-              <h3 className="text-white text-sm font-bold tracking-widest uppercase mb-6">
-                Quick Links
-              </h3>
-              <ul className="space-y-3">
-                {quickLinks.map((link) => (
-                  <li key={link.name} className="group">
-                    <a
-                      onClick={() => (window.location.href = link.path)}
-                      className="flex items-center gap-2 text-zinc-400 hover:text-[#e36a2e] cursor-pointer text-sm transition-all duration-300"
-                    >
-                      <ChevronRight
-                        size={14}
-                        className="text-[#e36a2e] transition-transform duration-300 group-hover:translate-x-1"
-                      />
-                      <span>{link.name}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Services Dropdown (Takes up 4 cols) */}
-            <div className="md:col-span-4">
-              <h3 className="text-white text-sm font-bold tracking-widest uppercase mb-6">
-                Our Services
-              </h3>
-              <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl overflow-hidden">
-                <button
-                  onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full px-5 py-4 font-medium text-white hover:bg-zinc-800 transition-colors"
-                >
-                  <span>Explore Services</span>
-                  <FaChevronDown
-                    className={`text-[#e36a2e] transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
-
-                <AnimatePresence>
-                  {isServicesOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      className="overflow-hidden bg-zinc-900"
-                    >
-                      <div className="p-2 space-y-1 max-h-60 overflow-y-auto custom-scrollbar">
-                        {serviceItems.map((service) => (
-                          <button
-                            key={service.name}
-                            onClick={() => handleServiceSelect(service.path)}
-                            className="block w-full text-left py-2.5 px-4 rounded-xl hover:bg-zinc-800 hover:text-[#e36a2e] text-zinc-400 text-sm font-medium transition-colors"
-                          >
-                            {service.name}
-                          </button>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Legal Bar */}
-          <div className="relative z-10 max-w-7xl mx-auto mt-16 pt-8 border-t border-zinc-900">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-zinc-500">
-              <p>
-                © {new Date().getFullYear()} Aussie Growth Media. All Rights
-                Reserved.
-              </p>
-              <div className="flex items-center gap-4">
-                <a
-                  onClick={() => (window.location.href = "/")}
-                  className="hover:text-white transition-colors cursor-pointer"
-                >
-                  growthflowmedia.com
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
 
         {/* Premium Floating Help Button */}
         <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
@@ -1597,7 +1447,7 @@ export default function GrowthFlowMedia() {
                 {/* Quick Actions */}
                 <div className="flex gap-3">
                   <button
-                    className="flex-1 bg-[#e36a2e] hover:bg-[#cf5f28] text-white text-sm py-2.5 rounded-xl font-medium transition-colors"
+                    className="flex-1 bg-[#e36a2e] hover:bg-[#e36a2e] text-white text-sm py-2.5 rounded-xl font-medium transition-colors"
                     onClick={(e) => {
                       e.stopPropagation();
                       setHelpOpen(false);
@@ -1625,3 +1475,7 @@ export default function GrowthFlowMedia() {
     </div>
   );
 }
+
+
+
+

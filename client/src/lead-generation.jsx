@@ -441,7 +441,7 @@ const LeadGeneration = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
               onClick={() => navigate("/contact")}
-              className="bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-12 py-6 rounded-full bold-font text-2xl shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5 transition-all duration-300"
+              className="bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-12 py-6 rounded-full bold-font text-2xl shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5 transition-all duration-300"
             >
               GET STARTED
             </button>
@@ -454,3 +454,4 @@ const LeadGeneration = () => {
 };
 
 export default LeadGeneration;
+

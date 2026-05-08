@@ -397,7 +397,7 @@ export default function Branding() {
             <button
               data-aos="fade-up"
               className="group inline-flex items-center gap-2
-                bg-[#e36a2e] hover:bg-[#cf5f28] text-white
+                bg-[#e36a2e] hover:bg-[#e36a2e] text-white
                 font-semibold text-sm px-7 py-3 rounded-full
                 transition-all duration-300
                 hover:shadow-[0_8px_24px_rgba(227,106,46,0.35)]
@@ -426,3 +426,4 @@ export default function Branding() {
     </div>
   );
 }
+

@@ -14,7 +14,7 @@ const TRACK = [...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS];
 
 export default function Marquee() {
   return (
-    <div className="w-full overflow-hidden bg-zinc-950 border-y border-zinc-900 py-8 mb-16 sm:py-10 select-none relative flex">
+    <div className="w-full overflow-hidden bg-zinc-950 border-y border-zinc-900 py-8 sm:py-10 select-none relative flex">
       {/* Inline style for the custom keyframes to make it plug-and-play */}
       <style>{`
         @keyframes scroll {

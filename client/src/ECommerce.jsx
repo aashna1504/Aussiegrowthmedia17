@@ -25,7 +25,7 @@ import {
   ArrowRightCircle,
 } from "lucide-react";
 import Footer from "./Footer";
-import image6 from "../images/logo.jpg";
+const image6 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 import { FaChevronDown } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -272,7 +272,7 @@ const EcommerceWebsites = () => {
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#e36a2e] rounded-full mix-blend-multiply filter blur-3xl animate-pulse" />
             <div className="absolute top-40 right-10 w-72 h-72 bg-orange-600 rounded-full mix-blend-multiply filter blur-3xl animate-pulse animation-delay-2000" />
-            <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-[#cf5f28] rounded-full mix-blend-multiply filter blur-3xl animate-pulse animation-delay-4000" />
+            <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-[#e36a2e] rounded-full mix-blend-multiply filter blur-3xl animate-pulse animation-delay-4000" />
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto mt-8">
@@ -719,7 +719,7 @@ const EcommerceWebsites = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={() => navigate("/contact")}
-                className="group bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#e36a2e]/30 flex items-center justify-center gap-3"
+                className="group bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#e36a2e]/30 flex items-center justify-center gap-3"
               >
                 Start Your Project
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -751,3 +751,4 @@ const EcommerceWebsites = () => {
 };
 
 export default EcommerceWebsites;
+

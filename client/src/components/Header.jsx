@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, ArrowRightCircle, ChevronDown } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import image6 from "../../images/logoflat.png";
+const image6 = "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png";
 
 const SERVICE_ITEMS = [
   { name: "Website Design", path: "/webdesign" },
@@ -71,7 +71,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-[100] w-full pt-8 px-8  transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-[100] w-full pt-8 px-8 transition-all duration-300 font-['Montserrat'] font-bold"
       data-aos="slide-down"
     >
       <div className="mx-auto max-w-7xl">

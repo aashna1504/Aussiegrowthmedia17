@@ -176,7 +176,7 @@ export default function AboutPage() {
 
             <button
               onClick={() => navigate("/contact")}
-              className="group px-8 py-4 rounded-full font-semibold flex items-center gap-3 text-white bg-[#e36a2e] hover:bg-[#cf5f28] transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+              className="group px-8 py-4 rounded-full font-semibold flex items-center gap-3 text-white bg-[#e36a2e] hover:bg-[#e36a2e] transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
             >
               Work With Us{" "}
               <ChevronRight
@@ -466,7 +466,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-4 relative z-10">
               <button
                 onClick={() => navigate("/contact")}
-                className="group w-full flex items-center justify-center gap-3 bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
+                className="group w-full flex items-center justify-center gap-3 bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[0_8px_20px_rgba(227,106,46,0.3)] hover:-translate-y-0.5"
               >
                 Book Free Strategy Call
                 <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -487,3 +487,4 @@ export default function AboutPage() {
     </main>
   );
 }
+

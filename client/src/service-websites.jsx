@@ -51,7 +51,7 @@ const ServiceWebsites = () => {
         }
         
         .gradient-text {
-          background: linear-gradient(135deg, #e36a2e 0%, #cf5f28 100%);
+          background: linear-gradient(135deg, #e36a2e 0%, #e36a2e 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -123,7 +123,7 @@ const ServiceWebsites = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <div className="bg-white border-2 border-[#e36a2e]/40 rounded-2xl p-6 sm:p-8 card-hover shadow-[0_4px_20px_rgba(227,106,46,0.08)]">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#e36a2e] to-[#cf5f28] rounded-xl flex items-center justify-center mb-4 sm:mb-6 float-animation">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-xl flex items-center justify-center mb-4 sm:mb-6 float-animation">
                 <svg
                   className="w-6 h-6 sm:w-8 sm:h-8 text-white"
                   fill="none"
@@ -152,7 +152,7 @@ const ServiceWebsites = () => {
               style={{ animationDelay: "0.1s" }}
             >
               <div
-                className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#cf5f28] to-[#e36a2e] rounded-xl flex items-center justify-center mb-4 sm:mb-6 float-animation"
+                className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-xl flex items-center justify-center mb-4 sm:mb-6 float-animation"
                 style={{ animationDelay: "1s" }}
               >
                 <svg
@@ -183,7 +183,7 @@ const ServiceWebsites = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <div
-                className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#e36a2e] to-[#cf5f28] rounded-xl flex items-center justify-center mb-4 sm:mb-6 float-animation"
+                className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-xl flex items-center justify-center mb-4 sm:mb-6 float-animation"
                 style={{ animationDelay: "2s" }}
               >
                 <svg
@@ -269,7 +269,7 @@ const ServiceWebsites = () => {
             <div className="fade-up" style={{ animationDelay: "0.1s" }}>
               <div className="bg-zinc-900/50 backdrop-blur-md rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#e36a2e]/40 h-full card-hover">
                 <div className="flex items-start space-x-4 sm:space-x-6 mb-6 sm:mb-8">
-                  <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#cf5f28] rounded-xl flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#e36a2e] rounded-xl flex items-center justify-center">
                     <span className="text-xl sm:text-2xl font-black text-white">
                       02
                     </span>
@@ -347,7 +347,7 @@ const ServiceWebsites = () => {
             <div className="fade-up" style={{ animationDelay: "0.3s" }}>
               <div className="bg-zinc-900/50 backdrop-blur-md rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#e36a2e]/40 h-full card-hover">
                 <div className="flex items-start space-x-4 sm:space-x-6 mb-6 sm:mb-8">
-                  <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#cf5f28] rounded-xl flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#e36a2e] rounded-xl flex items-center justify-center">
                     <span className="text-xl sm:text-2xl font-black text-white">
                       04
                     </span>
@@ -404,7 +404,7 @@ const ServiceWebsites = () => {
             <div className="fade-up">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="bg-gradient-to-br from-[#e36a2e] to-[#cf5f28] rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-[#e36a2e]/20">
+                  <div className="bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-[#e36a2e]/20">
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
                       <div className="space-y-4 sm:space-y-6">
                         <div className="flex items-center space-x-4">
@@ -531,7 +531,7 @@ const ServiceWebsites = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="bg-gradient-to-br from-[#e36a2e] to-[#cf5f28] rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-[#e36a2e]/20">
+                  <div className="bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-[#e36a2e]/20">
                     <div className="space-y-4">
                       {[
                         "Get a Free Quote",
@@ -573,7 +573,7 @@ const ServiceWebsites = () => {
             <div className="fade-up">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="bg-gradient-to-br from-[#cf5f28] to-[#e36a2e] rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-[#e36a2e]/20">
+                  <div className="bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-[#e36a2e]/20">
                     <div className="grid grid-cols-3 gap-3 sm:gap-4">
                       {[
                         {
@@ -616,7 +616,7 @@ const ServiceWebsites = () => {
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
                           <div
-                            className="bg-gradient-to-r from-[#e36a2e] to-[#cf5f28] h-2 rounded-full"
+                            className="bg-gradient-to-r from-[#e36a2e] to-[#e36a2e] h-2 rounded-full"
                             style={{ width: "78%" }}
                           ></div>
                         </div>
@@ -847,7 +847,7 @@ const ServiceWebsites = () => {
                 className="fade-up card-hover"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="bg-gradient-to-br from-[#e36a2e] to-[#cf5f28] rounded-2xl p-6 sm:p-8 shadow-lg shadow-[#e36a2e]/20">
+                <div className="bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-2xl p-6 sm:p-8 shadow-lg shadow-[#e36a2e]/20">
                   <h3 className="heading-font text-lg sm:text-xl lg:text-2xl font-bold text-white text-center">
                     {tech.name}
                   </h3>
@@ -1072,7 +1072,7 @@ const ServiceWebsites = () => {
                         className={`bg-zinc-900/50 backdrop-blur-sm border-2 ${step.color} rounded-2xl p-6 sm:p-8 card-hover`}
                       >
                         <div className="flex items-center justify-center mb-6">
-                          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#e36a2e] to-[#cf5f28] rounded-full flex items-center justify-center shadow-lg shadow-[#e36a2e]/30">
+                          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-full flex items-center justify-center shadow-lg shadow-[#e36a2e]/30">
                             {step.num === "4" ? (
                               <svg
                                 className="w-8 h-8 sm:w-10 sm:h-10 text-white"
@@ -1166,7 +1166,7 @@ const ServiceWebsites = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
-              className="w-full sm:w-auto bg-[#e36a2e] hover:bg-[#cf5f28] text-white px-8 sm:px-12 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:shadow-2xl hover:shadow-[#e36a2e]/30 transform hover:scale-105 transition-all duration-300 border-2 border-[#e36a2e]"
+              className="w-full sm:w-auto bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-8 sm:px-12 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:shadow-2xl hover:shadow-[#e36a2e]/30 transform hover:scale-105 transition-all duration-300 border-2 border-[#e36a2e]"
               onClick={() => navigate("/contact")}
             >
               Get Your Free Quote
@@ -1180,3 +1180,4 @@ const ServiceWebsites = () => {
 };
 
 export default ServiceWebsites;
+
