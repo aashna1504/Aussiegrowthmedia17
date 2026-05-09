@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
-import MarketingAuditForm from "./components/MarketingAuditForm";
+import FormData from "./components/FormData";
 
 const DigitalMarketing = () => {
   const navigate = useNavigate();
@@ -70,7 +70,7 @@ const DigitalMarketing = () => {
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
                 Data-driven <br />
-                <span className="text-zinc-500">marketing that</span> <br />
+                <span className="text-zinc-300">marketing that</span> <br />
                 <span className="bg-gradient-to-r from-orange-400 to-[#e36a2e] bg-clip-text text-transparent">
                   drives revenue.
                 </span>
@@ -216,11 +216,11 @@ const DigitalMarketing = () => {
                       January 3, 2026
                     </p>
                     <h3 className="text-lg font-bold text-white mb-3 leading-tight transition-colors duration-300 group-hover:text-[#e36a2e]">
-                      How We Deliver High-Performance PPC Management in Brisbane
+                      How We Deliver High-Performance PPC Management in World
                     </h3>
                     <p className="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
                       PPC management is becoming the foundation stone for the
-                      success of businesses in Brisbane. Discover how
+                      success of businesses in World. Discover how
                       instantaneous reach can transform your ROI.
                     </p>
                   </div>
@@ -255,7 +255,7 @@ const DigitalMarketing = () => {
 
             {/* Right Column: Premium Contact Form */}
             <div data-aos="fade-left">
-              <MarketingAuditForm />
+              <FormData />
             </div>
           </div>
         </div>

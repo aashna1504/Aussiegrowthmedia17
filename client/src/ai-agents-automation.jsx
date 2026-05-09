@@ -103,14 +103,7 @@ const AIAgentsAutomation = () => {
     <div className="min-h-screen bg-zinc-950 text-white overflow-hidden">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-        
-        * {
-          font-family: 'Rajdhani', sans-serif;
-        }
-        
-        .tech-font {
-          font-family: 'Orbitron', monospace;
-        }
+   
         
         .reveal {
           opacity: 0;
@@ -123,7 +116,7 @@ const AIAgentsAutomation = () => {
           transform: translateX(0);
         }
         
-        .glow-text {
+        . {
           text-shadow: 0 0 20px rgba(227, 106, 46, 0.5), 0 0 40px rgba(227, 106, 46, 0.3);
         }
         
@@ -229,14 +222,14 @@ const AIAgentsAutomation = () => {
           <div className="reveal">
             <div className="inline-flex items-center space-x-3 bg-[#e36a2e]/10 border-2 border-[#e36a2e] rounded-full px-6 py-3 mb-8">
               <div className="w-2 h-2 bg-[#e36a2e] rounded-full pulse-glow"></div>
-              <span className="tech-font text-sm font-bold text-[#e36a2e] tracking-widest">
+              <span className=" text-sm font-bold text-[#e36a2e] tracking-widest">
                 AI AUTOMATION SYSTEMS
               </span>
             </div>
           </div>
 
           <div className="reveal" style={{ transitionDelay: "0.2s" }}>
-            <h1 className="tech-font text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-6 glow-text">
+            <h1 className=" text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-6 ">
               THE FUTURE IS
               <span className="block bg-gradient-to-r from-orange-400 via-[#e36a2e] to-orange-500 bg-clip-text text-transparent">
                 AUTONOMOUS
@@ -286,7 +279,7 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className="tech-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6">
+            <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6">
               AUTOMATION SOLUTIONS
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
@@ -316,7 +309,7 @@ const AIAgentsAutomation = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="tech-font text-2xl font-bold text-white">
+                    <h3 className=" text-2xl font-bold text-white">
                       Intelligent Chatbots
                     </h3>
                     <div className="text-sm text-[#e36a2e] uppercase tracking-wider">
@@ -338,7 +331,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Natural Language Processing
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         NLP v4.0
                       </span>
                     </div>
@@ -351,7 +344,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Multi-Language Support
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         100+ Languages
                       </span>
                     </div>
@@ -364,7 +357,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Sentiment Analysis
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Real-time
                       </span>
                     </div>
@@ -377,7 +370,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Learning Algorithm
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Continuous
                       </span>
                     </div>
@@ -421,7 +414,7 @@ const AIAgentsAutomation = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="tech-font text-2xl font-bold text-white">
+                    <h3 className=" text-2xl font-bold text-white">
                       Workflow Automation
                     </h3>
                     <div className="text-sm text-[#e36a2e] uppercase tracking-wider">
@@ -443,7 +436,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         API Integration Hub
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         1000+ Apps
                       </span>
                     </div>
@@ -456,7 +449,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Task Scheduling Engine
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Advanced
                       </span>
                     </div>
@@ -469,7 +462,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Error Handling & Retry
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Intelligent
                       </span>
                     </div>
@@ -482,7 +475,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Monitoring Dashboard
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Real-time
                       </span>
                     </div>
@@ -524,7 +517,7 @@ const AIAgentsAutomation = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="tech-font text-2xl font-bold text-white">
+                    <h3 className=" text-2xl font-bold text-white">
                       Data Processing AI
                     </h3>
                     <div className="text-sm text-[#e36a2e] uppercase tracking-wider">
@@ -546,7 +539,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Pattern Recognition
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         ML Powered
                       </span>
                     </div>
@@ -559,7 +552,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Predictive Analytics
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Advanced
                       </span>
                     </div>
@@ -572,7 +565,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Anomaly Detection
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Automated
                       </span>
                     </div>
@@ -585,7 +578,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Custom Visualizations
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Dynamic
                       </span>
                     </div>
@@ -627,7 +620,7 @@ const AIAgentsAutomation = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="tech-font text-2xl font-bold text-white">
+                    <h3 className=" text-2xl font-bold text-white">
                       Custom AI Agents
                     </h3>
                     <div className="text-sm text-[#e36a2e] uppercase tracking-wider">
@@ -649,7 +642,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Custom Training Models
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Your Data
                       </span>
                     </div>
@@ -662,7 +655,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Decision Logic Engine
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Configurable
                       </span>
                     </div>
@@ -675,7 +668,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         API-First Architecture
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Scalable
                       </span>
                     </div>
@@ -688,7 +681,7 @@ const AIAgentsAutomation = () => {
                       <span className="text-sm text-zinc-300">
                         Full Documentation
                       </span>
-                      <span className="text-xs text-[#e36a2e] tech-font">
+                      <span className="text-xs text-[#e36a2e] ">
                         Included
                       </span>
                     </div>
@@ -719,7 +712,7 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className="tech-font text-4xl sm:text-5xl md:text-6xl font-black mb-6 glow-text">
+            <h2 className=" text-4xl sm:text-5xl md:text-6xl font-black mb-6 ">
               POWERED BY CUTTING-EDGE AI
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
@@ -904,7 +897,7 @@ const AIAgentsAutomation = () => {
                   <div className="flex justify-center mb-3 text-white">
                     {tech.icon}
                   </div>
-                  <div className="tech-font text-lg font-bold text-white text-center">
+                  <div className=" text-lg font-bold text-white text-center">
                     {tech.name}
                   </div>
                 </div>
@@ -913,7 +906,7 @@ const AIAgentsAutomation = () => {
           </div>
 
           <div className="bg-zinc-900/50 border-2 border-[#e36a2e]/40 rounded-3xl p-12 glow-box reveal">
-            <h3 className="tech-font text-3xl font-bold text-white mb-8 text-center">
+            <h3 className=" text-3xl font-bold text-white mb-8 text-center">
               Why Our Stack Matters
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1043,7 +1036,7 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className="tech-font text-4xl sm:text-5xl md:text-6xl font-black mb-6">
+            <h2 className=" text-4xl sm:text-5xl md:text-6xl font-black mb-6">
               REAL-WORLD APPLICATIONS
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
@@ -1110,7 +1103,7 @@ const AIAgentsAutomation = () => {
               >
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
                   <div className="flex-1">
-                    <h3 className="tech-font text-3xl font-bold text-white mb-4">
+                    <h3 className=" text-3xl font-bold text-white mb-4">
                       {useCase.title}
                     </h3>
                     <p className="text-lg text-zinc-300 mb-6 leading-relaxed">
@@ -1136,7 +1129,7 @@ const AIAgentsAutomation = () => {
                     <div className="text-sm text-zinc-400 mb-2 uppercase tracking-wider">
                       {useCase.stats.label}
                     </div>
-                    <div className="tech-font text-4xl font-black text-[#e36a2e]">
+                    <div className=" text-4xl font-black text-[#e36a2e]">
                       {useCase.stats.value}
                     </div>
                   </div>
@@ -1153,7 +1146,7 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className="tech-font text-4xl sm:text-5xl md:text-6xl font-black mb-6 glow-text">
+            <h2 className=" text-4xl sm:text-5xl md:text-6xl font-black mb-6 ">
               DEVELOPMENT METHODOLOGY
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
@@ -1239,7 +1232,7 @@ const AIAgentsAutomation = () => {
                   <div className="flex flex-col lg:flex-row lg:items-start gap-8">
                     <div className="flex-shrink-0">
                       <div className="bg-[#e36a2e] rounded-2xl p-6 text-center min-w-[150px]">
-                        <div className="tech-font text-sm text-white/70 mb-2">
+                        <div className=" text-sm text-white/70 mb-2">
                           {phase.phase}
                         </div>
                         <div className="text-5xl font-black text-white mb-2">
@@ -1252,7 +1245,7 @@ const AIAgentsAutomation = () => {
                     </div>
 
                     <div className="flex-1">
-                      <h3 className="tech-font text-3xl font-bold text-white mb-4">
+                      <h3 className=" text-3xl font-bold text-white mb-4">
                         {phase.title}
                       </h3>
                       <p className="text-lg text-zinc-300 mb-6 leading-relaxed">
@@ -1300,7 +1293,7 @@ const AIAgentsAutomation = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#e36a2e]/20 via-zinc-950 to-zinc-950"></div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
-          <h2 className="tech-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 glow-text">
+          <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 ">
             AUTOMATE YOUR
             <span className="block bg-gradient-to-r from-orange-400 via-[#e36a2e] to-orange-500 bg-clip-text text-transparent">
               FUTURE TODAY
@@ -1312,7 +1305,7 @@ const AIAgentsAutomation = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
-              className="bg-gradient-to-r from-[#e36a2e] to-[#e36a2e] text-white px-12 py-6 rounded-xl tech-font text-lg font-bold hover:shadow-2xl hover:shadow-[#e36a2e]/50 transform hover:scale-105 transition-all duration-300 border-2 border-[#e36a2e] pulse-glow"
+              className="bg-gradient-to-r from-[#e36a2e] to-[#e36a2e] text-white px-12 py-6 rounded-xl  text-lg font-bold hover:shadow-2xl hover:shadow-[#e36a2e]/50 transform hover:scale-105 transition-all duration-300 border-2 border-[#e36a2e] pulse-glow"
               onClick={() => navigate("/contact")}
             >
               START YOUR PROJECT

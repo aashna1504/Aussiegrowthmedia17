@@ -33,13 +33,7 @@ const GoogleAdsManagement = () => {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Archivo+Black&display=swap');
         
-        * {
-          font-family: 'Inter', sans-serif;
-        }
-        
-        .display-font {
-          font-family: 'Archivo Black', sans-serif;
-        }
+       
         
         .reveal-up {
           opacity: 0;
@@ -84,7 +78,7 @@ const GoogleAdsManagement = () => {
               </span>
             </div>
 
-            <h1 className="display-font text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-6">
+            <h1 className=" text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-6 font-black">
               GET FOUND
               <span className="block text-[#e36a2e]">GET RESULTS</span>
             </h1>
@@ -120,7 +114,7 @@ const GoogleAdsManagement = () => {
       <div className="py-24 lg:py-32 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal-up">
-            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl text-blue-800 mb-6">
+            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl font-black text-blue-800 mb-6">
               Complete{" "}
               <span
                 className="relative inline-block display-font"
@@ -287,7 +281,7 @@ const GoogleAdsManagement = () => {
                     {campaign.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="display-font text-3xl text-blue-800 mb-2">
+                    <h3 className="display-font text-3xl font-bold text-blue-800 mb-2">
                       {campaign.title}
                     </h3>
                     <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider">
@@ -329,7 +323,7 @@ const GoogleAdsManagement = () => {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#e36a2e]/8 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 reveal-up">
-            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl text-white mb-6">
+            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
               Why Work With Us?
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
@@ -469,7 +463,7 @@ const GoogleAdsManagement = () => {
                 <div className="w-14 h-14 bg-[#e36a2e]/10 rounded-2xl flex items-center justify-center mb-4">
                   {benefit.icon}
                 </div>
-                <h3 className="display-font text-2xl text-white mb-3">
+                <h3 className="display-font text-3xl font-bold text-white mb-3">
                   {benefit.title}
                 </h3>
                 <p className="text-zinc-400 leading-relaxed">
@@ -485,7 +479,7 @@ const GoogleAdsManagement = () => {
       <div className="py-24 lg:py-32 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal-up">
-            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl text-blue-800 mb-6">
+            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl font-black text-blue-800 mb-6">
               Our{" "}
               <span
                 className="relative inline-block display-font"
@@ -563,7 +557,7 @@ const GoogleAdsManagement = () => {
                           {step.duration}
                         </div>
                       </div>
-                      <h3 className="display-font text-3xl text-blue-800 mb-4">
+                      <h3 className="display-font text-3xl font-bold text-blue-800 mb-4">
                         {step.title}
                       </h3>
                       <p className="text-lg text-zinc-500 leading-relaxed">
@@ -588,7 +582,7 @@ const GoogleAdsManagement = () => {
       <div className="py-24 lg:py-32 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal-up">
-            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl text-white mb-6">
+            <h2 className="display-font text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
               Advanced Optimization
             </h2>
             <p className="text-xl text-zinc-400">
@@ -641,7 +635,7 @@ const GoogleAdsManagement = () => {
       <div className="py-24 lg:py-32 bg-zinc-950 border-t border-zinc-900 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#e36a2e]/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-up relative z-10">
-          <h2 className="display-font text-4xl sm:text-5xl md:text-6xl text-white mb-6">
+          <h2 className="display-font text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
             Start Driving Results{" "}
             <span className="text-orange-500 display-font">Today</span>
           </h2>
@@ -654,7 +648,7 @@ const GoogleAdsManagement = () => {
               onClick={() => navigate("/contact")}
               className="bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-12 py-6 rounded-full display-font text-lg hover:shadow-2xl hover:shadow-[#e36a2e]/30 transform hover:scale-105 transition-all duration-300"
             >
-              LETS START
+              LET'S START
             </button>
           </div>
         </div>
@@ -665,4 +659,3 @@ const GoogleAdsManagement = () => {
 };
 
 export default GoogleAdsManagement;
-

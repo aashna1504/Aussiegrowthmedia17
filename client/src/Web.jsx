@@ -3,7 +3,7 @@ import { Server, CheckCircle2 } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
-import WebEnquiryForm from "./components/WebEnquiryForm";
+import FormData from "./components/FormData";
 
 const WebDesignDevelopment = () => {
   useEffect(() => {
@@ -264,11 +264,11 @@ const WebDesignDevelopment = () => {
                       January 3, 2026
                     </p>
                     <h3 className="text-lg font-bold text-white mb-3 leading-tight transition-colors duration-300 group-hover:text-[#e36a2e]">
-                      How We Deliver High-Performance PPC Management in Brisbane
+                      How We Deliver High-Performance PPC Management in World
                     </h3>
                     <p className="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
                       PPC management is becoming the foundation stone for the
-                      success of businesses in Brisbane. Discover how
+                      success of businesses in World. Discover how
                       instantaneous reach can transform your ROI.
                     </p>
                   </div>
@@ -303,7 +303,7 @@ const WebDesignDevelopment = () => {
 
             {/* Right Column: Premium Contact Form */}
             <div data-aos="fade-left">
-              <WebEnquiryForm />
+              <FormData />
             </div>
           </div>
         </div>

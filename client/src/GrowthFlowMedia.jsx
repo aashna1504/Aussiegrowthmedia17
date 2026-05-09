@@ -318,8 +318,8 @@ export default function GrowthFlowMedia() {
         designImages={designImages}
         currentImageIndex={currentImageIndex}
         heroImage={vansh}
-        badgeText="Design & Digital Marketing Agency Brisbane"
-        subHeading="with AR Digital Solutions"
+        badgeText="Design & Digital Marketing Agency Worldwide"
+        subHeading="with Aussie Growth Media"
         ctaLabel="Get Started Now"
         onServiceChange={handleChangeSelection}
         onCtaClick={scrollToContact}
@@ -642,20 +642,19 @@ export default function GrowthFlowMedia() {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
               <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
-                Brisbane's Trusted Agency
+                 Trusted Agency
               </span>
             </div>
 
             <h2
               data-aos="slide-down"
-              className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.05] mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] mb-6"
             >
               Why Choose Us For
               <br />
               <span className="italic text-orange-400">
                 Digital Marketing
               </span>{" "}
-              <span className="text-white/30">in Brisbane?</span>
             </h2>
 
             <p
@@ -1188,15 +1187,15 @@ export default function GrowthFlowMedia() {
                   {
                     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
                     title:
-                      "How Aussie Growth Media Delivers High-Performance PPC Management in Brisbane",
+                      "How Aussie Growth Media Delivers High-Performance PPC Management in World",
                     date: "January 3, 2026",
                     excerpt:
-                      "PPC management is becoming the foundation stone for the success of businesses in Brisbane — the instantaneous reach it offers is unmatched.",
+                      "PPC management is becoming the foundation stone for the success of businesses in World — the instantaneous reach it offers is unmatched.",
                   },
                   {
                     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
                     title:
-                      "Why Your Business Needs a Professional Website Design Agency in Brisbane",
+                      "Why Your Business Needs a Professional Website Design Agency in World",
                     date: "December 26, 2025",
                     excerpt:
                       "Your website is often the very first impression a potential customer has of your business — make it count.",

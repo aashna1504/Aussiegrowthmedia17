@@ -15,7 +15,7 @@ const FILTER_PILLS = [
 const SERVICE_CARDS = [
   {
     title: "Web Design & Development",
-    desc: "Your website is up on the internet even when you are not. With our professional team of web design and development in Brisbane...",
+    desc: "Your website is up on the internet even when you are not. With our professional team of web design and development in World...",
     cta: "Web Design Services",
     icon: <Globe className="w-14 h-14 text-blue-600 animate-matrix-all" />,
   },

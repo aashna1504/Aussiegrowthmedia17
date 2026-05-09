@@ -154,9 +154,11 @@ const ConversionRateOptimization = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-[#e36a2e]/5 via-orange-50 to-[#fafafa] rounded-3xl border border-[#e36a2e]/15 p-8 h-full">
               <img
-                src={image6}
+                src={
+                  "https://res.cloudinary.com/dbpzzvcik/image/upload/v1778231875/logoflat_euvua9.png"
+                }
                 alt="CRO Analytics Dashboard"
-                className="rounded-2xl shadow-xl w-full h-48 sm:h-64 object-cover mb-6 border border-[#e36a2e]/10"
+                className="rounded-2xl shadow-xl w-full h-30 object-contain mb-6 border border-[#e36a2e]/10"
               />
               <h3 className="text-2xl font-bold text-blue-800 mb-3 tracking-tight">
                 Our CRO Framework
@@ -275,7 +277,6 @@ const ConversionRateOptimization = () => {
               <p
                 data-aos="slide-up"
                 className="text-[#e36a2e] text-lg sm:text-xl mb-10 sm:mb-12 font-medium"
-                style={{ fontFamily: "Comic Sans MS, cursive" }}
               >
                 Stay up To Date With The Latest From Aussie Growth Media.
               </p>
@@ -295,14 +296,14 @@ const ConversionRateOptimization = () => {
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
                       How Aussie Growth Media Delivers High-Performance PPC
-                      Management in Brisbane
+                      Management in World
                     </h3>
                     <p className="text-[#e36a2e] text-xs mb-2 tracking-wide uppercase font-medium">
                       January 3, 2026
                     </p>
                     <p className="text-zinc-400 text-sm leading-relaxed">
                       PPC management is becoming the foundation stone for the
-                      success of businesses in Brisbane. The instantaneous reach
+                      success of businesses in World. The instantaneous reach
                       that it offers
                     </p>
                   </div>
@@ -322,13 +323,13 @@ const ConversionRateOptimization = () => {
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
                       Why Your Business Needs a Professional Website Design
-                      Agency in Brisbane
+                      Agency in World
                     </h3>
                     <p className="text-[#e36a2e] text-xs mb-2 tracking-wide uppercase font-medium">
                       December 26, 2025
                     </p>
                     <p className="text-zinc-400 text-sm leading-relaxed">
-                      Website Design Agency in Brisbane plays a crucial role in
+                      Website Design Agency in World plays a crucial role in
                       today's market, where your website is often the very first
                     </p>
                   </div>
@@ -356,4 +357,3 @@ const ConversionRateOptimization = () => {
 };
 
 export default ConversionRateOptimization;
-

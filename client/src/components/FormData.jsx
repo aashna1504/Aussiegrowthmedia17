@@ -184,7 +184,7 @@ const ContactForm = ({
                 onChange={handleChange}
                 onFocus={() => setFocused(name)}
                 onBlur={() => setFocused("")}
-                className="w-full pl-5 pr-10 py-3.5 rounded-xl text-white text-sm placeholder:text-zinc-600 focus:outline-none transition-all duration-200 font-medium"
+                className="w-full pl-5 pr-10 py-3.5 rounded-xl text-white text-sm placeholder:text-white/70 focus:outline-none transition-all duration-200 font-medium"
                 style={{
                   background:
                     focused === name
@@ -210,7 +210,7 @@ const ContactForm = ({
 
         {/* Radio label */}
         <div className="flex items-center gap-3 mb-4">
-          <p className="text-[10px] tracking-[0.28em] uppercase text-zinc-500 font-bold whitespace-nowrap">
+          <p className="text-[10px] tracking-[0.28em] uppercase text-zinc-400 font-bold whitespace-nowrap">
             How can we help?
           </p>
           <div className="flex-1 h-px bg-white/5" />
@@ -279,7 +279,7 @@ const ContactForm = ({
                 <span
                   className="text-xs font-medium transition-colors duration-150"
                   style={{
-                    color: active ? "#ffb085" : "rgba(255,255,255,0.4)",
+                    color: active ? "#ffffff" : "rgba(255,255,255,0.9)",
                     letterSpacing: "0.01em",
                   }}
                 >
@@ -294,7 +294,7 @@ const ContactForm = ({
         <button
           type="submit"
           disabled={isSubmitting}
-          className="group relative w-full overflow-hidden font-black text-xs tracking-[0.2em] uppercase px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all duration-300 text-white hover:-translate-y-[1px] disabled:opacity-70 disabled:cursor-not-allowed"
+          className="group relative w-full overflow-hidden font-black text-xs tracking-[0.2em] uppercase px-8 py-4 rounded-full flex items-center justify-center gap-2.5 transition-all duration-300 text-white hover:-translate-y-[1px] disabled:opacity-70 disabled:cursor-not-allowed"
           style={{
             background: `linear-gradient(135deg, ${accent} 0%, ${accent}dd 100%)`,
             boxShadow: `0 4px 16px ${accent}40`,
@@ -313,7 +313,7 @@ const ContactForm = ({
         </button>
 
         {footerNote && (
-          <p className="text-center text-[10px] text-zinc-700 mt-4 tracking-widest uppercase font-medium">
+          <p className="text-center text-[10px] text-zinc-400 mt-4 tracking-widest uppercase font-medium">
             {footerNote}
           </p>
         )}

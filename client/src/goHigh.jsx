@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
-import GoHighForm from "./components/GoHighForm";
+import FormData from "./components/FormData";
 
 const GoHighLevelCRM = () => {
   const navigate = useNavigate();
@@ -334,7 +334,7 @@ const GoHighLevelCRM = () => {
 
             {/* Right Column: Premium Contact Form */}
             <div data-aos="fade-left">
-              <GoHighForm />
+              <FormData />
             </div>
           </div>
         </div>

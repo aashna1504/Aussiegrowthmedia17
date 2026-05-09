@@ -70,17 +70,17 @@ const NEWS = [
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
     date: "January 3, 2026",
     title:
-      "How Aussie Growth Media Delivers High-Performance PPC Management in Brisbane",
+      "How Aussie Growth Media Delivers High-Performance PPC Management in World",
     excerpt:
-      "PPC management is becoming the foundation stone for the success of businesses in Brisbane. The instantaneous reach that it offers…",
+      "PPC management is becoming the foundation stone for the success of businesses in World. The instantaneous reach that it offers…",
   },
   {
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
     date: "December 26, 2025",
     title:
-      "Why Your Business Needs a Professional Website Design Agency in Brisbane",
+      "Why Your Business Needs a Professional Website Design Agency in World",
     excerpt:
-      "Website Design Agency in Brisbane plays a crucial role in today's market, where your website is often the very first…",
+      "Website Design Agency in World plays a crucial role in today's market, where your website is often the very first…",
   },
 ];
 

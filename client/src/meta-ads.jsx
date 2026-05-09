@@ -59,13 +59,7 @@ const MetaAdsManagement = () => {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
         
-        * {
-          font-family: 'Poppins', sans-serif;
-        }
-        
-        .brand-font {
-          font-family: 'Montserrat', sans-serif;
-        }
+    
         
         .pop {
           opacity: 0;
@@ -122,12 +116,11 @@ const MetaAdsManagement = () => {
               </span>
             </div>
 
-            <div className="mt-20">
+            <div className="mt-5">
               <h1 className="brand-font text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-[#e36a2e] mb-6">
                 <span className="text-white">Dominate</span>
                 Social
               </h1>
-
               <p className="text-xl sm:text-2xl text-zinc-400 max-w-4xl mx-auto mb-12 leading-relaxed">
                 Expert Facebook & Instagram advertising that turns scroll into
                 sales. We create thumb-stopping ads that drive real business
@@ -535,7 +528,7 @@ const MetaAdsManagement = () => {
               onClick={() => navigate("/contact")}
               className="bg-[#e36a2e] hover:bg-[#e36a2e] text-white px-12 py-6 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-[#e36a2e]/30 transform hover:scale-105 transition-all duration-300"
             >
-              Let's Start
+              LET'S START
             </button>
           </div>
         </div>
@@ -546,4 +539,3 @@ const MetaAdsManagement = () => {
 };
 
 export default MetaAdsManagement;
-

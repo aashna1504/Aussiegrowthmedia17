@@ -5,8 +5,8 @@ const HeroSection = ({
   currentImageIndex = 0,
   heroImage,
   heroImageAlt = "Professional team member",
-  badgeText = "Design & Digital Marketing Agency Brisbane",
-  subHeading = "with AR Digital Solutions",
+  badgeText = "Design & Digital Marketing Agency Worldwide",
+  subHeading = "with Aussie Growth Media",
   description = "Elevate your online presence with our seamless fusion of cutting-edge design and strategic digital marketing solutions.",
   serviceOptions = [
     { label: "Website Design", value: "/webdesign" },
@@ -46,7 +46,7 @@ const HeroSection = ({
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <span className="inline-block rounded-md bg-amber-400 px-3 py-1 text-[11px] font-semibold text-zinc-900">
+            <span className="inline-block rounded-full bg-amber-400 px-3 py-1 text-[11px] font-semibold text-zinc-200">
               {badgeText}
             </span>
 
@@ -60,7 +60,9 @@ const HeroSection = ({
                     src={currentImage.image}
                     alt={currentImage.text || "Hero visual"}
                     className={`h-full w-full ${
-                      currentImage.fit === "contain" ? "object-contain p-1" : "object-cover"
+                      currentImage.fit === "contain"
+                        ? "object-contain p-1"
+                        : "object-cover"
                     }`}
                   />
                 ) : (
@@ -115,7 +117,9 @@ const HeroSection = ({
 
           <div className="relative">
             <img
-              src={"https://www.pngmart.com/files/15/Smiling-Business-Man-Standing-PNG-Image.png"}
+              src={
+                "https://www.pngmart.com/files/15/Smiling-Business-Man-Standing-PNG-Image.png"
+              }
               alt={heroImageAlt}
               className="mx-auto h-[430px] w-auto object-contain"
             />

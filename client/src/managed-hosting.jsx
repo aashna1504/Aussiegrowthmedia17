@@ -44,7 +44,7 @@ const Hosting = () => {
   return (
     <div className="min-h-screen bg-[#fafafa] font-sans">
       {/* Dark Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-zinc-950 overflow-hidden min-h-screen">
+      <section className="relative pt-32 pb-20 lg:pb-32 bg-zinc-950 overflow-hidden min-h-screen">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#e36a2e]/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center" data-aos="fade-up">
@@ -55,8 +55,8 @@ const Hosting = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.1]">
-              Hosting that <br />
-              <span className="bg-gradient-to-r from-orange-400 to-[#e36a2e] bg-clip-text text-transparent">
+              Hosting that 
+              <span className="ml-4 bg-gradient-to-r from-orange-400 to-[#e36a2e] bg-clip-text text-transparent">
                 never sleeps.
               </span>
             </h1>

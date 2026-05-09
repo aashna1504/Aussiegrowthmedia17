@@ -30,14 +30,7 @@ const ServiceWebsites = () => {
     <div className="min-h-screen bg-[#fafafa]">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
-        
-        * {
-          font-family: 'Space Mono', monospace;
-        }
-        
-        .heading-font {
-          font-family: 'Playfair Display', serif;
-        }
+       
         
         .fade-up {
           opacity: 0;
@@ -445,7 +438,7 @@ const ServiceWebsites = () => {
                     optimize every image, minimize code, and leverage advanced
                     caching techniques to ensure your visitors never wait. Fast
                     websites rank higher in search engines and convert
-                    better—it's that simple.
+                    better, it's that simple.
                   </p>
                   <div className="space-y-4">
                     {[
@@ -938,216 +931,215 @@ const ServiceWebsites = () => {
       </div>
 
       {/* Process Section */}
-      <div className="bg-zinc-950 py-16 sm:py-20 lg:py-32 relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#e36a2e]/5 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 py-16 sm:py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20 fade-up">
             <h2 className="heading-font text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6">
               Our Development Process
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-              A proven, transparent workflow that delivers exceptional results
-              on time and on budget
+            <p className="text-base sm:text-lg md:text-xl text-emerald-200 max-w-3xl mx-auto leading-relaxed">
+              A proven, transparent workflow that delivers exceptional results on time and on budget
             </p>
           </div>
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-[#e36a2e]/20 h-full"></div>
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-emerald-400/30 h-full"></div>
 
             <div className="space-y-12 sm:space-y-16 lg:space-y-24">
-              {[
-                {
-                  week: "WEEK 1",
-                  title: "Discovery & Strategy",
-                  color: "border-[#e36a2e]/40",
-                  badgeBg: "bg-[#e36a2e]/10 border-[#e36a2e]",
-                  badgeText: "text-[#e36a2e]",
-                  num: "1",
-                  desc: "We start by understanding your business, target audience, competitors, and goals. Through in-depth consultations and research, we develop a comprehensive strategy tailored to your unique needs.",
-                  items: [
-                    "Competitor analysis",
-                    "Target audience research",
-                    "Content strategy planning",
-                  ],
-                  side: "right",
-                },
-                {
-                  week: "WEEK 2-3",
-                  title: "Design & Wireframing",
-                  color: "border-[#e36a2e]/40",
-                  badgeBg: "bg-[#e36a2e]/10 border-[#e36a2e]",
-                  badgeText: "text-[#e36a2e]",
-                  num: "2",
-                  desc: "Our designers create custom mockups and wireframes that bring your vision to life. You'll see exactly how your website will look before we write a single line of code, with unlimited revisions until it's perfect.",
-                  items: [
-                    "Custom design mockups",
-                    "User flow optimization",
-                    "Brand identity integration",
-                  ],
-                  side: "left",
-                },
-                {
-                  week: "WEEK 4-6",
-                  title: "Development & Testing",
-                  color: "border-[#e36a2e]/40",
-                  badgeBg: "bg-[#e36a2e]/10 border-[#e36a2e]",
-                  badgeText: "text-[#e36a2e]",
-                  num: "3",
-                  desc: "Our developers transform designs into a fully functional website using clean, efficient code. Rigorous testing across all devices and browsers ensures everything works flawlessly before launch.",
-                  items: [
-                    "Clean, maintainable code",
-                    "Cross-device testing",
-                    "Performance optimization",
-                  ],
-                  side: "right",
-                },
-                {
-                  week: "WEEK 7",
-                  title: "Launch & Support",
-                  color: "border-[#e36a2e]/40",
-                  badgeBg: "bg-[#e36a2e]/10 border-[#e36a2e]",
-                  badgeText: "text-[#e36a2e]",
-                  num: "4",
-                  desc: "We handle every aspect of the launch, from domain setup to SSL configuration. Post-launch, we provide comprehensive training and ongoing support to ensure your continued success.",
-                  items: [
-                    "Seamless deployment",
-                    "CMS training & documentation",
-                    "30-day support guarantee",
-                  ],
-                  side: "left",
-                },
-              ].map((step, index) => (
-                <div key={index} className="fade-up">
-                  <div
-                    className={`grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center`}
-                  >
-                    <div
-                      className={
-                        step.side === "right" ? "lg:text-right" : `lg:order-2`
-                      }
-                    >
-                      <div
-                        className={`inline-block lg:inline ${step.badgeBg} border-2 rounded-full px-4 sm:px-6 py-2 mb-4`}
-                      >
-                        <span
-                          className={`text-xs sm:text-sm font-bold ${step.badgeText} tracking-wider`}
-                        >
-                          {step.week}
-                        </span>
+              {/* Step 1 */}
+              <div className="fade-up">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                  <div className="lg:text-right">
+                    <div className="inline-block lg:inline bg-emerald-100 border-2 border-emerald-400 rounded-full px-4 sm:px-6 py-2 mb-4">
+                      <span className="text-xs sm:text-sm font-bold text-emerald-900 tracking-wider">WEEK 1</span>
+                    </div>
+                    <h3 className="heading-font text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4">
+                      Discovery & Strategy
+                    </h3>
+                    <p className="text-base sm:text-lg text-emerald-100 leading-relaxed mb-4 sm:mb-6">
+                      We start by understanding your business, target audience, competitors, and goals. Through in-depth consultations and research, we develop a comprehensive strategy tailored to your unique needs.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2 lg:justify-end">
+                        <span className="text-sm sm:text-base text-emerald-200">Competitor analysis</span>
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
                       </div>
-                      <h3 className="heading-font text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4">
-                        {step.title}
-                      </h3>
-                      <p className="text-base sm:text-lg text-zinc-400 leading-relaxed mb-4 sm:mb-6">
-                        {step.desc}
-                      </p>
-                      <div className="space-y-2">
-                        {step.items.map((item, i) => (
-                          <div
-                            key={i}
-                            className={`flex items-center space-x-2 ${step.side === "right" ? "lg:justify-end" : ""}`}
-                          >
-                            {step.side !== "right" && (
-                              <div className="w-2 h-2 bg-[#e36a2e] rounded-full"></div>
-                            )}
-                            <span className="text-sm sm:text-base text-zinc-300">
-                              {item}
-                            </span>
-                            {step.side === "right" && (
-                              <div className="w-2 h-2 bg-[#e36a2e] rounded-full"></div>
-                            )}
-                          </div>
-                        ))}
+                      <div className="flex items-center space-x-2 lg:justify-end">
+                        <span className="text-sm sm:text-base text-emerald-200">Target audience research</span>
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                      </div>
+                      <div className="flex items-center space-x-2 lg:justify-end">
+                        <span className="text-sm sm:text-base text-emerald-200">Content strategy planning</span>
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
                       </div>
                     </div>
-                    <div
-                      className={
-                        step.side === "right"
-                          ? "lg:pl-12"
-                          : "lg:order-1 lg:pr-12"
-                      }
-                    >
-                      <div
-                        className={`bg-zinc-900/50 backdrop-blur-sm border-2 ${step.color} rounded-2xl p-6 sm:p-8 card-hover`}
-                      >
-                        <div className="flex items-center justify-center mb-6">
-                          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#e36a2e] to-[#e36a2e] rounded-full flex items-center justify-center shadow-lg shadow-[#e36a2e]/30">
-                            {step.num === "4" ? (
-                              <svg
-                                className="w-8 h-8 sm:w-10 sm:h-10 text-white"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M5 13l4 4L19 7"
-                                />
-                              </svg>
-                            ) : (
-                              <span className="text-2xl sm:text-3xl font-black text-white">
-                                {step.num}
-                              </span>
-                            )}
-                          </div>
+                  </div>
+                  <div className="lg:pl-12">
+                    <div className="bg-white/10 backdrop-blur-sm border-2 border-emerald-400 rounded-2xl p-6 sm:p-8 card-hover">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-2xl sm:text-3xl font-black text-emerald-900">1</span>
                         </div>
-                        {step.num === "1" && (
-                          <div className="space-y-3">
-                            <div className="h-3 bg-white/10 rounded-full w-full"></div>
-                            <div className="h-3 bg-white/10 rounded-full w-4/5"></div>
-                            <div className="h-3 bg-white/10 rounded-full w-3/5"></div>
-                          </div>
-                        )}
-                        {step.num === "2" && (
-                          <div className="grid grid-cols-2 gap-3">
-                            {[1, 2, 3, 4].map((i) => (
-                              <div
-                                key={i}
-                                className="aspect-square bg-white/10 rounded-lg"
-                              ></div>
-                            ))}
-                          </div>
-                        )}
-                        {step.num === "3" && (
-                          <div className="space-y-3">
-                            {[
-                              ["green", "100%"],
-                              ["green", "100%"],
-                              ["yellow", "85%"],
-                            ].map(([color, pct], i) => (
-                              <div
-                                key={i}
-                                className="flex items-center space-x-2"
-                              >
-                                <div
-                                  className={`w-3 h-3 bg-${color}-400 rounded-full animate-pulse`}
-                                ></div>
-                                <div className="flex-1 h-2 bg-white/10 rounded"></div>
-                                <span className="text-xs text-white/60">
-                                  {pct}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                        {step.num === "4" && (
-                          <div className="bg-zinc-950/50 rounded-xl p-4 text-center border border-zinc-800">
-                            <div className="text-white font-bold mb-2">
-                              Website Status
-                            </div>
-                            <div className="text-3xl font-black text-green-400">
-                              LIVE ✓
-                            </div>
-                          </div>
-                        )}
+                      </div>
+                      <div className="space-y-3">
+                        <div className="h-3 bg-white/20 rounded-full w-full"></div>
+                        <div className="h-3 bg-white/20 rounded-full w-4/5"></div>
+                        <div className="h-3 bg-white/20 rounded-full w-3/5"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Step 2 */}
+              <div className="fade-up">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                  <div className="lg:order-2">
+                    <div className="inline-block bg-teal-100 border-2 border-teal-400 rounded-full px-4 sm:px-6 py-2 mb-4">
+                      <span className="text-xs sm:text-sm font-bold text-teal-900 tracking-wider">WEEK 2-3</span>
+                    </div>
+                    <h3 className="heading-font text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4">
+                      Design & Wireframing
+                    </h3>
+                    <p className="text-base sm:text-lg text-teal-100 leading-relaxed mb-4 sm:mb-6">
+                      Our designers create custom mockups and wireframes that bring your vision to life. You'll see exactly how your website will look before we write a single line of code, with unlimited revisions until it's perfect.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                        <span className="text-sm sm:text-base text-teal-200">Custom design mockups</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                        <span className="text-sm sm:text-base text-teal-200">User flow optimization</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                        <span className="text-sm sm:text-base text-teal-200">Brand identity integration</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:order-1 lg:pr-12">
+                    <div className="bg-white/10 backdrop-blur-sm border-2 border-teal-400 rounded-2xl p-6 sm:p-8 card-hover">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-teal-400 to-cyan-400 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-2xl sm:text-3xl font-black text-teal-900">2</span>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="aspect-square bg-white/20 rounded-lg"></div>
+                        <div className="aspect-square bg-white/20 rounded-lg"></div>
+                        <div className="aspect-square bg-white/20 rounded-lg"></div>
+                        <div className="aspect-square bg-white/20 rounded-lg"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="fade-up">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                  <div className="lg:text-right">
+                    <div className="inline-block lg:inline bg-cyan-100 border-2 border-cyan-400 rounded-full px-4 sm:px-6 py-2 mb-4">
+                      <span className="text-xs sm:text-sm font-bold text-cyan-900 tracking-wider">WEEK 4-6</span>
+                    </div>
+                    <h3 className="heading-font text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4">
+                      Development & Testing
+                    </h3>
+                    <p className="text-base sm:text-lg text-cyan-100 leading-relaxed mb-4 sm:mb-6">
+                      Our developers transform designs into a fully functional website using clean, efficient code. Rigorous testing across all devices and browsers ensures everything works flawlessly before launch.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2 lg:justify-end">
+                        <span className="text-sm sm:text-base text-cyan-200">Clean, maintainable code</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      </div>
+                      <div className="flex items-center space-x-2 lg:justify-end">
+                        <span className="text-sm sm:text-base text-cyan-200">Cross-device testing</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      </div>
+                      <div className="flex items-center space-x-2 lg:justify-end">
+                        <span className="text-sm sm:text-base text-cyan-200">Performance optimization</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:pl-12">
+                    <div className="bg-white/10 backdrop-blur-sm border-2 border-cyan-400 rounded-2xl p-6 sm:p-8 card-hover">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-cyan-400 to-emerald-400 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-2xl sm:text-3xl font-black text-cyan-900">3</span>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <div className="flex-1 h-2 bg-white/20 rounded"></div>
+                          <span className="text-xs text-white/60">100%</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <div className="flex-1 h-2 bg-white/20 rounded"></div>
+                          <span className="text-xs text-white/60">100%</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                          <div className="flex-1 h-2 bg-white/20 rounded"></div>
+                          <span className="text-xs text-white/60">85%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="fade-up">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                  <div className="lg:order-2">
+                    <div className="inline-block bg-emerald-100 border-2 border-emerald-400 rounded-full px-4 sm:px-6 py-2 mb-4">
+                      <span className="text-xs sm:text-sm font-bold text-emerald-900 tracking-wider">WEEK 7</span>
+                    </div>
+                    <h3 className="heading-font text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4">
+                      Launch & Support
+                    </h3>
+                    <p className="text-base sm:text-lg text-emerald-100 leading-relaxed mb-4 sm:mb-6">
+                      We handle every aspect of the launch, from domain setup to SSL configuration. Post-launch, we provide comprehensive training and ongoing support to ensure your continued success.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                        <span className="text-sm sm:text-base text-emerald-200">Seamless deployment</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                        <span className="text-sm sm:text-base text-emerald-200">CMS training & documentation</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                        <span className="text-sm sm:text-base text-emerald-200">30-day support guarantee</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:order-1 lg:pr-12">
+                    <div className="bg-white/10 backdrop-blur-sm border-2 border-emerald-400 rounded-2xl p-6 sm:p-8 card-hover">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-full flex items-center justify-center shadow-lg">
+                          <svg className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="bg-white/20 rounded-xl p-4 text-center">
+                        <div className="text-white font-bold mb-2">Website Status</div>
+                        <div className="text-3xl font-black text-green-400">LIVE</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1180,4 +1172,6 @@ const ServiceWebsites = () => {
 };
 
 export default ServiceWebsites;
+
+
 
