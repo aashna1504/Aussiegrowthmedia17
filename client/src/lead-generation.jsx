@@ -36,16 +36,7 @@ const LeadGeneration = () => {
   return (
     <div className="min-h-screen bg-[#fafafa]">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap');
-        
-        * {
-          font-family: 'Poppins', sans-serif;
-        }
-        
-        .bold-font {
-          font-family: 'Bebas Neue', cursive;
-        }
-        
+       
         .bounce {
           opacity: 0;
           transform: scale(0.5);
@@ -90,17 +81,17 @@ const LeadGeneration = () => {
               >
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
-              <span className="text-sm font-bold text-[#e36a2e] tracking-wider">
+              <span className="bold-font text-sm text-[#e36a2e] tracking-wider">
                 LEAD GENERATION EXPERTS
               </span>
             </div>
 
-            <h1 className="bold-font text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-[#e36a2e] mb-6 leading-none">
+            <h1 className="bold-font font-extrabold text-5xl sm:text-6xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-[#e36a2e] mb-6 leading-none">
               FILL YOUR
-              <span className="block text-white">PIPELINE</span>
+              <span className="block font-extrabold text-white">PIPELINE</span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-zinc-400 max-w-4xl mx-auto mb-12 leading-relaxed">
+            <p className="bold-font text-xl sm:text-2xl text-zinc-400 max-w-4xl mx-auto mb-12 leading-relaxed">
               Generate high-quality, ready-to-convert leads through
               multi-channel campaigns. We bring you customers who are actively
               looking for what you sell.
@@ -142,10 +133,10 @@ const LeadGeneration = () => {
       <div className="py-20 lg:py-32 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 bounce">
-            <h2 className="bold-font text-5xl sm:text-6xl md:text-7xl text-blue-800 mb-6">
+            <h2 className="bold-font font-extrabold text-5xl sm:text-6xl md:text-7xl text-blue-800 mb-6">
               MULTI-CHANNEL LEAD GENERATION
             </h2>
-            <p className="text-xl text-gray-500 max-w-3xl mx-auto">
+            <p className="bold-font text-xl text-gray-500 max-w-3xl mx-auto">
               We deploy proven strategies across multiple channels to maximize
               your lead volume and quality
             </p>
@@ -237,7 +228,7 @@ const LeadGeneration = () => {
                 >
                   {method.icon}
                 </div>
-                <h3 className="bold-font text-3xl text-blue-800 mb-3">
+                <h3 className="bold-font font-extrabold text-3xl text-blue-800 mb-3">
                   {method.title}
                 </h3>
                 <p className="text-gray-500 mb-6 leading-relaxed">
@@ -265,13 +256,13 @@ const LeadGeneration = () => {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#e36a2e]/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 bounce">
-            <p className="text-[#e36a2e] text-sm font-bold tracking-[0.2em] uppercase mb-4">
+            <p className="bold-font text-[#e36a2e] text-sm tracking-[0.2em] uppercase mb-4">
               Quality First
             </p>
-            <h2 className="bold-font text-5xl sm:text-6xl md:text-7xl text-white mb-6">
+            <h2 className="bold-font font-extrabold text-5xl sm:text-6xl md:text-7xl text-white mb-6">
               QUALITY OVER QUANTITY
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="bold-font text-xl text-zinc-400 max-w-3xl mx-auto">
               We don't just generate leads—we generate qualified leads that
               actually convert into customers
             </p>
@@ -324,10 +315,10 @@ const LeadGeneration = () => {
       <div className="py-20 lg:py-32 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 bounce">
-            <h2 className="bold-font text-5xl sm:text-6xl md:text-7xl text-blue-800 mb-6">
+            <h2 className="bold-font font-extrabold text-5xl sm:text-6xl md:text-7xl text-blue-800 mb-6">
               PROVEN RESULTS ACROSS INDUSTRIES
             </h2>
-            <p className="text-xl text-gray-500 max-w-3xl mx-auto">
+            <p className="bold-font text-xl text-gray-500 max-w-3xl mx-auto">
               We've generated millions of leads across diverse industries
             </p>
           </div>
@@ -364,13 +355,13 @@ const LeadGeneration = () => {
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#e36a2e]/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 bounce">
-            <p className="text-[#e36a2e] text-sm font-bold tracking-[0.2em] uppercase mb-4">
+            <p className="bold-font text-[#e36a2e] text-sm tracking-[0.2em] uppercase mb-4">
               How It Works
             </p>
-            <h2 className="bold-font text-5xl sm:text-6xl md:text-7xl text-white mb-6">
+            <h2 className="bold-font font-extrabold text-5xl sm:text-6xl md:text-7xl text-white mb-6">
               OUR PROCESS
             </h2>
-            <p className="text-xl text-zinc-400">
+            <p className="bold-font text-xl text-zinc-400">
               A systematic approach to generating consistent, high-quality leads
             </p>
           </div>
@@ -414,7 +405,7 @@ const LeadGeneration = () => {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="bold-font text-3xl text-white mb-2">
+                  <h3 className="bold-font font-extrabold text-3xl text-white mb-2">
                     {item.title}
                   </h3>
                   <p className="text-zinc-400 text-lg">{item.desc}</p>
@@ -432,10 +423,10 @@ const LeadGeneration = () => {
           <p className="text-[#e36a2e] text-sm font-bold tracking-[0.2em] uppercase mb-4">
             Let's Get Started
           </p>
-          <h2 className="bold-font text-5xl sm:text-6xl md:text-7xl text-white mb-6">
+          <h2 className="bold-font font-extrabold text-5xl sm:text-6xl md:text-7xl text-white mb-6">
             READY TO GROW?
           </h2>
-          <p className="text-xl text-zinc-400 mb-12">
+          <p className="bold-font text-xl text-zinc-400 mb-12">
             Start generating qualified leads that turn into paying customers
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -454,4 +445,3 @@ const LeadGeneration = () => {
 };
 
 export default LeadGeneration;
-

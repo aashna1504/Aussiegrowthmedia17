@@ -529,7 +529,7 @@ export default function GrowthFlowMedia() {
           {/* Headline */}
           <h2
             data-aos="slide-down"
-            className="font-['Cormorant_Garamond'] text-5xl sm:text-6xl md:text-7xl font-light leading-[1.05] mb-6"
+            className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] mb-6"
           >
             <span className="text-orange-400 italic">Congratulations!</span>
             <br />
@@ -542,7 +542,7 @@ export default function GrowthFlowMedia() {
           {/* Subtext */}
           <p
             data-aos="slide-up"
-            className="font-['Cormorant_Garamond'] text-white/60 text-xl sm:text-2xl font-light italic mb-12 leading-relaxed"
+            className="font-['Montserrat'] text-white/60 text-sm sm:text-base font-light mb-12 leading-relaxed"
           >
             because you're ready to grow your business, build a brand,
             <br className="hidden sm:block" />
@@ -648,7 +648,7 @@ export default function GrowthFlowMedia() {
 
             <h2
               data-aos="slide-down"
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] mb-6"
+              className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6"
             >
               Why Choose Us For
               <br />
@@ -867,14 +867,14 @@ export default function GrowthFlowMedia() {
               </div>
 
               {/* Headline */}
-              <h2 className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.05] mb-8">
+              <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] mb-8">
                 <span className="text-orange-400 italic block">
                   You Focus on
                   <br />
                   Your Business.
                 </span>
                 <span className="text-white/80">We'll Take Care of</span>{" "}
-                <span className="text-white font-semibold">Your Growth.</span>
+                <span className="text-white">Your Growth.</span>
               </h2>
 
               {/* Thin divider */}
@@ -905,14 +905,14 @@ export default function GrowthFlowMedia() {
               {/* Location pills */}
               <div className="flex items-center gap-3 mb-10">
                 <div className="flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-full px-4 py-2">
-                  <span className="text-base leading-none">🇦🇺</span>
+                  <span className="text-base leading-none text-white">🇦🇺</span>
                   <span className="font-['Montserrat'] text-[11px] text-white/50 tracking-wide font-medium">
                     Australia
                   </span>
                 </div>
                 <div className="w-6 h-px bg-white/10" />
                 <div className="flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-full px-4 py-2">
-                  <span className="text-base leading-none">🇮🇳</span>
+                  <span className="text-base leading-none text-white">🇮🇳</span>
                   <span className="font-['Montserrat'] text-[11px] text-white/50 tracking-wide font-medium">
                     India
                   </span>
@@ -1005,12 +1005,15 @@ export default function GrowthFlowMedia() {
             {/* Left Column: Text & FAQs */}
             <div>
               <div data-aos="fade-right" className="mb-10 sm:mb-14">
-                <p className="text-[#e36a2e] text-xs sm:text-sm font-bold tracking-[0.2em] uppercase mb-4">
-                  FAQ
-                </p>
-                <h2 className="text-white text-4xl sm:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+                  <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+                  <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+                    FAQ
+                  </span>
+                </div>
+                <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
                   Your questions, <br />
-                  <span className="text-zinc-500">answered.</span>
+                  <span className="italic text-orange-400">answered.</span>
                 </h2>
               </div>
 
@@ -1152,7 +1155,7 @@ export default function GrowthFlowMedia() {
             </div>
             <h2
               data-aos="slide-left"
-              className="font-['Cormorant_Garamond'] text-5xl sm:text-6xl lg:text-7xl font-light text-zinc-900 leading-[1.05]"
+              className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-zinc-900 leading-[1.05]"
             >
               Let's <span className="italic text-orange-500">Talk.</span>
             </h2>
@@ -1174,7 +1177,7 @@ export default function GrowthFlowMedia() {
                 </div>
                 <h2
                   data-aos="slide-left"
-                  className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl font-light text-zinc-900 leading-tight"
+                  className="font-['Montserrat'] text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight"
                 >
                   News &{" "}
                   <span className="italic text-orange-500">Insights</span>

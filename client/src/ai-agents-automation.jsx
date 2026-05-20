@@ -220,25 +220,25 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto text-center">
           <div className="reveal">
-            <div className="inline-flex items-center space-x-3 bg-[#e36a2e]/10 border-2 border-[#e36a2e] rounded-full px-6 py-3 mb-8">
-              <div className="w-2 h-2 bg-[#e36a2e] rounded-full pulse-glow"></div>
-              <span className=" text-sm font-bold text-[#e36a2e] tracking-widest">
-                AI AUTOMATION SYSTEMS
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+              <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+                AI Automation Systems
               </span>
             </div>
           </div>
 
           <div className="reveal" style={{ transitionDelay: "0.2s" }}>
-            <h1 className=" text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-6 ">
-              THE FUTURE IS
-              <span className="block bg-gradient-to-r from-orange-400 via-[#e36a2e] to-orange-500 bg-clip-text text-transparent">
-                AUTONOMOUS
+            <h1 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+              The Future Is
+              <span className="block italic text-orange-400">
+                Autonomous.
               </span>
             </h1>
           </div>
 
           <div className="reveal" style={{ transitionDelay: "0.4s" }}>
-            <p className="text-xl sm:text-2xl md:text-3xl text-zinc-400 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base font-light mb-12 max-w-3xl mx-auto leading-relaxed">
               Harness the power of intelligent automation and AI agents to
               transform your business operations, eliminate repetitive tasks,
               and unlock unprecedented efficiency.
@@ -279,10 +279,16 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6">
-              AUTOMATION SOLUTIONS
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+              <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+                What We Build
+              </span>
+            </div>
+            <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+              Automation <span className="italic text-orange-400">Solutions</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base font-light max-w-3xl mx-auto leading-relaxed">
               Custom-built AI agents and automation systems designed for your
               specific business needs
             </p>
@@ -712,10 +718,16 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className=" text-4xl sm:text-5xl md:text-6xl font-black mb-6 ">
-              POWERED BY CUTTING-EDGE AI
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+              <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+                Technology Stack
+              </span>
+            </div>
+            <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+              Powered by <span className="italic text-orange-400">Cutting-Edge AI</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base font-light max-w-3xl mx-auto leading-relaxed">
               We leverage the most advanced AI models and frameworks to build
               intelligent, reliable automation systems
             </p>
@@ -1036,10 +1048,16 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className=" text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-              REAL-WORLD APPLICATIONS
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+              <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+                Use Cases
+              </span>
+            </div>
+            <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+              Real-World <span className="italic text-orange-400">Applications</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base font-light max-w-3xl mx-auto leading-relaxed">
               See how businesses across industries are transforming with AI
               automation
             </p>
@@ -1146,10 +1164,16 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 reveal">
-            <h2 className=" text-4xl sm:text-5xl md:text-6xl font-black mb-6 ">
-              DEVELOPMENT METHODOLOGY
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+              <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+                Our Process
+              </span>
+            </div>
+            <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+              Development <span className="italic text-orange-400">Methodology</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+            <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base font-light max-w-3xl mx-auto leading-relaxed">
               A systematic, agile approach that delivers production-ready AI
               systems
             </p>
@@ -1293,13 +1317,19 @@ const AIAgentsAutomation = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#e36a2e]/20 via-zinc-950 to-zinc-950"></div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
-          <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 ">
-            AUTOMATE YOUR
-            <span className="block bg-gradient-to-r from-orange-400 via-[#e36a2e] to-orange-500 bg-clip-text text-transparent">
-              FUTURE TODAY
+          <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+            <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+              Get Started
+            </span>
+          </div>
+          <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+            Automate Your
+            <span className="block italic text-orange-400">
+              Future Today.
             </span>
           </h2>
-          <p className="text-xl text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base font-light mb-12 max-w-2xl mx-auto leading-relaxed">
             Transform your business with intelligent automation. Save time,
             reduce costs, and scale without limits.
           </p>

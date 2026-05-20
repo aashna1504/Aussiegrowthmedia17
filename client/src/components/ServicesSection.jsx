@@ -53,18 +53,29 @@ const SERVICE_CARDS = [
 
 const ServicesSection = () => {
   return (
-    <section className="bg-white py-20 px-6 font-[Montserrat]">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="relative bg-zinc-950 py-20 sm:py-28 px-6 font-['Montserrat'] overflow-hidden">
+      {/* Radial glow */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(249,115,22,0.06),transparent_60%)]" />
+
+      <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Header Section */}
-        <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-3">
-          Our Growth Services
-        </h2>
-        <p className="text-base lg:text-lg text-gray-900 mb-10 max-w-2xl mx-auto font-semibold leading-tight">
-          we Are A Full-Service Digital Marketing Agency With Expertise In The Following Areas.
-        </p>
+        <div className="mb-14">
+          <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+            <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
+              What We Offer
+            </span>
+          </div>
+          <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+            Our Growth <span className="italic text-orange-400">Services</span>
+          </h2>
+          <p className="font-['Montserrat'] text-white/50 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed font-light">
+            We are a full-service digital marketing agency with expertise in the following areas.
+          </p>
+        </div>
 
         {/* Colorful Banners in 2 Rows */}
-        <div className="flex flex-col items-center gap-3 mb-14">
+        <div className="flex flex-col items-center gap-3 mb-12">
           <div className="flex flex-wrap justify-center gap-3">
             {FILTER_PILLS.slice(0, 3).map((pill, i) => (
               <span key={i} className="px-4 py-2 rounded-md text-white font-bold text-xs shadow-sm" style={{ backgroundColor: pill.color }}>

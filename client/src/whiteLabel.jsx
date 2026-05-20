@@ -17,9 +17,7 @@ const WhiteLabelMarketing = () => {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Mulish:wght@300;400;500;600;700&display=swap');
-        .wlm-root  { font-family:'Mulish',sans-serif; }
-        .wlm-h    { font-family:'Syne',sans-serif; }
+        
 
         .wlm-tag  { display:inline-flex;align-items:center;gap:8px;background:rgba(227,106,46,0.1);border:1px solid rgba(227,106,46,0.3);color:#e36a2e;font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;padding:6px 16px;border-radius:9999px;font-family:'Mulish',sans-serif; }
         .wlm-dot  { width:6px;height:6px;border-radius:50%;background:#e36a2e;animation:wdot 2s infinite; }

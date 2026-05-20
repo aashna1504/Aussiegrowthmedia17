@@ -140,10 +140,16 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 sm:mb-20 max-w-3xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-blue-800 mb-6">
-            What Our <span className="text-[#e36a2e]">Clients Say.</span>
+          <div className="inline-flex items-center gap-2 border border-zinc-200 bg-white rounded-full px-4 py-1.5 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+            <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-zinc-400 uppercase">
+              Client Reviews
+            </span>
+          </div>
+          <h2 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-zinc-900 leading-[1.05] mb-6">
+            What Our <span className="italic text-orange-400">Clients Say.</span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-500 leading-relaxed">
+          <p className="font-['Montserrat'] text-zinc-500 text-sm sm:text-base leading-relaxed font-light">
             Don't just take our word for it. Here is what our partners have to
             say about scaling their business with Aussie Growth Media.
           </p>
