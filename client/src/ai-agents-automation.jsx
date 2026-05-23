@@ -841,7 +841,7 @@ const AIAgentsAutomation = () => {
                 ),
               },
               {
-                name: "Hugging Face",
+                name: "Chatbots",
                 color: "from-orange-500 to-[#e36a2e]",
                 icon: (
                   <svg
