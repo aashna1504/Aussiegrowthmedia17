@@ -67,24 +67,6 @@ const TopBar = ({
             <span className="whitespace-nowrap sm:hidden">{emailShort}</span>
           </a>
         </div>
-
-        {/* Actions Group */}
-        <div className="hidden sm:flex items-center gap-3 text-[11px]">
-          <a className="hover:text-zinc-900 transition-colors">Contact Us</a>
-          <span className="text-zinc-300">|</span>
-          <a className="hover:text-zinc-900 transition-colors">Quick Links</a>
-          <span className="text-zinc-300">|</span>
-          <a className="hover:text-zinc-900 transition-colors">Log In/Sign Up</a>
-          <span className="text-zinc-300">|</span>
-          <a
-            onClick={onCtaClick}
-            className="cursor-pointer whitespace-nowrap transition-colors duration-300"
-            onMouseEnter={(e) => (e.currentTarget.style.color = accentColor)}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "")}
-          >
-            {ctaLabel}
-          </a>
-        </div>
       </div>
     </div>
   );

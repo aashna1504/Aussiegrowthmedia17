@@ -220,7 +220,7 @@ const AIAgentsAutomation = () => {
 
         <div className="relative max-w-7xl mx-auto text-center">
           <div className="reveal">
-            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8 mt-20">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
               <span className="font-['Montserrat'] text-[10px] font-bold tracking-[0.25em] text-white/40 uppercase">
                 AI Automation Systems

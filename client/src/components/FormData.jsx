@@ -45,7 +45,7 @@ const ContactForm = ({
     email: "",
     phone: "",
     callback: "",
-    service: "",
+    services: [],
   });
 
   const accent = accentColor;
@@ -54,6 +54,14 @@ const ContactForm = ({
 
   const handleChange = (e) =>
     setFormData((p) => ({ ...p, [e.target.name]: e.target.value }));
+
+  const handleServiceToggle = (opt) =>
+    setFormData((p) => ({
+      ...p,
+      services: p.services.includes(opt)
+        ? p.services.filter((s) => s !== opt)
+        : [...p.services, opt],
+    }));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -66,16 +74,17 @@ const ContactForm = ({
     setIsSubmitting(true);
 
     try {
-      // ✅ Direct axios call to local backend — no Vercel, no api client
-      await axios.post(apiRoute, formData);
-
+      await axios.post(apiRoute, {
+        ...formData,
+        service: formData.services.join(", ") || "Not selected",
+      });
       toast.success("Message sent successfully!");
       setFormData({
         name: "",
         email: "",
         phone: "",
         callback: "",
-        service: "",
+        services: [],
       });
       navigate(successPath);
     } catch (error) {
@@ -208,15 +217,23 @@ const ContactForm = ({
           ))}
         </div>
 
-        {/* Radio label */}
+        {/* Service label */}
         <div className="flex items-center gap-3 mb-4">
           <p className="text-[10px] tracking-[0.28em] uppercase text-zinc-400 font-bold whitespace-nowrap">
             How can we help?
           </p>
           <div className="flex-1 h-px bg-white/5" />
+          {formData.services.length > 0 && (
+            <span
+              className="text-[10px] font-bold px-2 py-0.5 rounded-full"
+              style={{ background: `${accent}22`, color: accent }}
+            >
+              {formData.services.length} selected
+            </span>
+          )}
         </div>
 
-        {/* Radio list */}
+        {/* Checkbox list */}
         <div
           className="space-y-0.5 mb-7 max-h-52 overflow-y-auto pr-2 custom-scrollbar"
           style={{
@@ -225,12 +242,12 @@ const ContactForm = ({
           }}
         >
           {radioOptions.map((opt, index) => {
-            const active = formData.service === opt;
-            const radioId = `service-opt-${index}`;
+            const active = formData.services.includes(opt);
+            const checkId = `service-opt-${index}`;
             return (
               <label
                 key={opt}
-                htmlFor={radioId}
+                htmlFor={checkId}
                 className="group flex items-center gap-3 px-4 py-2.5 rounded-xl cursor-pointer transition-colors duration-150 relative hover:bg-white/5"
                 style={{
                   background: active ? accentFaint : undefined,
@@ -242,38 +259,30 @@ const ContactForm = ({
                 {active && (
                   <div
                     className="absolute left-0 top-2 bottom-2 w-[2.5px] rounded-full"
-                    style={{
-                      background: accent,
-                      boxShadow: `0 0 8px ${accent}80`,
-                    }}
+                    style={{ background: accent, boxShadow: `0 0 8px ${accent}80` }}
                   />
                 )}
                 <div
-                  className="w-3.5 h-3.5 rounded-full shrink-0 flex items-center justify-center transition-all duration-150"
+                  className="w-3.5 h-3.5 rounded-md shrink-0 flex items-center justify-center transition-all duration-150"
                   style={{
                     border: active
                       ? `2px solid ${accent}`
                       : "1px solid rgba(255,255,255,0.18)",
-                    background: active ? accentFaint : "transparent",
+                    background: active ? accent : "transparent",
                   }}
                 >
                   {active && (
-                    <div
-                      className="w-1.5 h-1.5 rounded-full"
-                      style={{
-                        background: accent,
-                        boxShadow: `0 0 4px ${accent}`,
-                      }}
-                    />
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                      <path d="M1 3L3 5L7 1" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   )}
                 </div>
                 <input
-                  id={radioId}
-                  type="radio"
-                  name="service"
+                  id={checkId}
+                  type="checkbox"
                   value={opt}
                   checked={active}
-                  onChange={handleChange}
+                  onChange={() => handleServiceToggle(opt)}
                   className="sr-only"
                 />
                 <span
